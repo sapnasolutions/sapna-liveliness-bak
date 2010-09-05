@@ -1,0 +1,5 @@
+liveliness is a small tool used to visualize a person's implicit activity through github commits and pivotal tracker usage. 
+
+it is hosted on heroku for anyone to use under sapna-liveliness.heroku.com
+
+In the future, other tools, such as yammer, basecamp, can be integrated as well.
