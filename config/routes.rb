@@ -8,8 +8,14 @@ ActionController::Routing::Routes.draw do |map|
     pivotal_tracker.namespace :project do |project|
       project.members ':project_id/members', :controller => "projects", :action => "members"
     end
-    # pivotal_tracker.resources :projects#, :only => [:foo]#, :members => { :members => :post }
   end
+
+  map.namespace :github do |github|
+    github.resource :users, :only => [:repositories], :collection => { :repositories => :post }
+    github.namespace :repository do |repository|
+      repository.members ':repository_name/members', :controller => "repositories", :action => "members"
+    end  
+  end  
   
   # The priority is based upon order of creation: first created -> highest priority.
 

@@ -1,15 +1,19 @@
 <div class="wrapper">
   
-  <div class="left">
+  <div class="pivotal_tracker left">
     <h1>Pivotal Tracker</h1>
     <div class="pivotal_tracker_wrapper">
-      <%= render :partial => "pivotal_tracker/login" %>
+      <%= render :partial => "/pivotal_tracker/login" %>
     </div>
   </div>
 
-  <div class="right">
-    
+  <div class="github right">
+    <h1>Github</h1>
+    <div class="github_wrapper">
+      <%= render :partial => "/github/login" %>
+    </div>
   </div>
+
   <div class="clear"></div>
   
 </div>

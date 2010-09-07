@@ -11,6 +11,21 @@ a {
   color: #f00;
   text-decoration: none; }
 
+#page #header {
+  width: 300px;
+  margin: auto; }
+  #page #header h1 {
+    font-size: 600%; }
+  #page #header h4 {
+    font-size: 130%;
+    color: red;
+    position: relative;
+    top: -70px;
+    left: 320px; }
+#page #content {
+  width: 900px;
+  margin: auto; }
+
 .messages {
   font-size: 200%;
   font-weight: bold;
@@ -37,6 +52,6 @@ a {
 .clear {
   clear: both; }
 
-.pivotal_tracker_wrapper,
-.github_login {
+#page #content .wrapper .pivotal_tracker,
+#page #content .wrapper .github {
   width: 400px; }

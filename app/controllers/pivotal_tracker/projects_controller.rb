@@ -1,3 +1,5 @@
+require 'pivotal_tracker/project'
+
 class PivotalTracker::ProjectsController < ApplicationController
 
   class NoTokenFoundException < Exception; end

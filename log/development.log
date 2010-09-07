@@ -3109,3 +3109,948 @@ Completed in 1592ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/pivotal
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:53:07) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (139.6ms)
+Rendered pivotal_tracker/_login (144.7ms)
+Rendered layouts/_messages (0.5ms)
+Completed in 166ms (View: 145, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:53:33) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (7.3ms)
+Rendered pivotal_tracker/_login (7.7ms)
+Rendered shared/_login (3.4ms)
+Rendered github/_login (4.1ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 21ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:54:10) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (55.2ms)
+Rendered pivotal_tracker/_login (55.6ms)
+Rendered shared/_login (3.1ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 68ms (View: 65, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:54:32) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (9.7ms)
+Rendered pivotal_tracker/_login (10.1ms)
+Rendered shared/_login (3.6ms)
+Rendered github/_login (3.9ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:54:35) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.5ms)
+Rendered pivotal_tracker/_login (6.9ms)
+Rendered shared/_login (3.5ms)
+Rendered github/_login (3.9ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:54:50) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (57.1ms)
+Rendered pivotal_tracker/_login (57.5ms)
+Rendered shared/_login (3.4ms)
+Rendered github/_login (3.7ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 65ms (View: 63, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:54:56) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.5ms)
+Rendered pivotal_tracker/_login (6.9ms)
+Rendered shared/_login (3.6ms)
+Rendered github/_login (3.8ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:01) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.9ms)
+Rendered pivotal_tracker/_login (7.3ms)
+Rendered shared/_login (3.0ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:12) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (56.8ms)
+Rendered pivotal_tracker/_login (57.3ms)
+Rendered shared/_login (3.2ms)
+Rendered github/_login (3.5ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 65ms (View: 63, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:26) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.2ms)
+Rendered pivotal_tracker/_login (6.6ms)
+Rendered shared/_login (3.9ms)
+Rendered github/_login (4.2ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:38) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (7.2ms)
+Rendered pivotal_tracker/_login (7.6ms)
+Rendered shared/_login (4.1ms)
+Rendered github/_login (4.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:43) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (57.4ms)
+Rendered pivotal_tracker/_login (58.0ms)
+Rendered shared/_login (3.0ms)
+Rendered github/_login (3.2ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 66ms (View: 63, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:45) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.6ms)
+Rendered pivotal_tracker/_login (7.0ms)
+Rendered shared/_login (3.3ms)
+Rendered github/_login (3.6ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:48) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.8ms)
+Rendered pivotal_tracker/_login (7.1ms)
+Rendered shared/_login (3.0ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:53) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (58.6ms)
+Rendered pivotal_tracker/_login (59.0ms)
+Rendered shared/_login (3.0ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 66ms (View: 64, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:55:56) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (7.1ms)
+Rendered pivotal_tracker/_login (7.5ms)
+Rendered shared/_login (3.1ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:56:00) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.8ms)
+Rendered pivotal_tracker/_login (7.2ms)
+Rendered shared/_login (3.2ms)
+Rendered github/_login (3.5ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:56:25) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.8ms)
+Rendered pivotal_tracker/_login (7.2ms)
+Rendered shared/_login (3.1ms)
+Rendered github/_login (3.3ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 69ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:56:31) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (7.1ms)
+Rendered pivotal_tracker/_login (7.5ms)
+Rendered shared/_login (3.1ms)
+Rendered github/_login (3.4ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:56:34) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.5ms)
+Rendered pivotal_tracker/_login (6.9ms)
+Rendered shared/_login (2.9ms)
+Rendered github/_login (3.1ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:56:52) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (8.2ms)
+Rendered pivotal_tracker/_login (8.6ms)
+Rendered shared/_login (3.5ms)
+Rendered github/_login (3.9ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:57:55) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.4ms)
+Rendered pivotal_tracker/_login (6.8ms)
+Rendered shared/_login (3.3ms)
+Rendered github/_login (3.6ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:58:00) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.4ms)
+Rendered pivotal_tracker/_login (6.8ms)
+Rendered shared/_login (3.2ms)
+Rendered github/_login (3.5ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:58:11) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (42.4ms)
+Rendered pivotal_tracker/_login (42.9ms)
+Rendered shared/_login (3.3ms)
+Rendered github/_login (3.6ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 53ms (View: 51, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:58:17) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.8ms)
+Rendered pivotal_tracker/_login (7.2ms)
+Rendered shared/_login (4.2ms)
+Rendered github/_login (4.5ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 10:58:20) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.4ms)
+Rendered pivotal_tracker/_login (6.8ms)
+Rendered shared/_login (3.1ms)
+Rendered github/_login (3.4ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing PivotalTracker::UsersController#login (for 127.0.0.1 at 2010-09-07 10:58:26) [POST]
+  Parameters: {"authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik=", "pivotal_tracker"=>{"password"=>"", "login"=>""}}
+Rendered shared/_login (7.5ms)
+Rendered pivotal_tracker/_login (8.2ms)
+Completed in 2634ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/pivotal_tracker/users/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (28.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (16.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 12:33:29) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (57.8ms)
+Rendered pivotal_tracker/_login (112.0ms)
+
+ActionView::TemplateError (undefined local variable or method `login_github_users_path' for #<ActionView::Base:0x1031c1ac0>) on line #1 of app/views/github/_login.html.erb:
+1: <%= render :partial => "/shared/login", :locals => { :symbol => :github, :path => login_github_users_path } %>
+
+    app/views/github/_login.html.erb:1
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/application/login.html.erb:13
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `original_process'
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 12:34:02) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (6.5ms)
+Rendered pivotal_tracker/_login (7.0ms)
+Rendered shared/_login (3.4ms)
+Rendered github/_login (4.1ms)
+Rendered layouts/_messages (0.4ms)
+Completed in 22ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100906060201')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:43:59) [POST]
+  Parameters: {"commit"=>"Login", "github"=>{"password"=>"", "login"=>""}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+Rendered shared/_login (4.9ms)
+Rendered github/_login (5.4ms)
+Completed in 9ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/github/users/repositories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 12:44:02) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (56.0ms)
+Rendered pivotal_tracker/_login (56.4ms)
+Rendered shared/_login (3.2ms)
+Rendered github/_login (3.5ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 64ms (View: 62, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:44:04) [POST]
+  Parameters: {"commit"=>"Login", "github"=>{"password"=>"", "login"=>""}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+Rendered shared/_login (5.0ms)
+Rendered github/_login (5.5ms)
+Completed in 10ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/github/users/repositories]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Outdated  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Parsing   '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Writing   '/Users/rien/code/sapna/git/sapna-liveliness/public/javascripts/defaults.js'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 12:44:39) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (60.1ms)
+Rendered pivotal_tracker/_login (63.5ms)
+Rendered shared/_login (3.5ms)
+Rendered github/_login (4.3ms)
+Rendered layouts/_messages (0.5ms)
+Completed in 140ms (View: 112, DB: 27) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:44:40) [POST]
+  Parameters: {"github"=>{"password"=>"", "login"=>""}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+Rendered shared/_login (7.6ms)
+Rendered github/_login (8.2ms)
+Completed in 11ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/github/users/repositories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:44:49) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nborghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+Rendered shared/_login (6.7ms)
+Rendered github/_login (7.5ms)
+Completed in 10ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/github/users/repositories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:45:12) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nb0rghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+
+ActionView::MissingTemplate (Missing template github/_repositories.erb in view path app/views):
+  haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+  app/controllers/github/users_controller.rb:7:in `repositories'
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `original_process'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:46:34) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nb0rghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+
+ActionView::TemplateError (github_repository_members_url failed to generate from {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :controller=>"github/repository/repositories", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :action=>"members", :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}, expected: {:controller=>"github/repository/repositories", :action=>"members"}, diff: {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}) on line #6 of app/views/github/_repositories.html.erb:
+3:   <ul class="repositories">
+4:     <% repositories.each do |repository| %>
+5:       <li class="repository">
+6:         <%= link_to repository.name, github_repository_members_path(repository), :class => "repository_link" %>
+7:         <%= indicator %>
+8:       </li>
+9:     <% end %>
+
+    (eval):20:in `github_repository_members_path'
+    app/views/github/_repositories.html.erb:6
+    app/views/github/_repositories.html.erb:4:in `each'
+    app/views/github/_repositories.html.erb:4
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/github/users_controller.rb:7:in `repositories'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `original_process'
+
+Rendered rescues/_trace (107.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:47:21) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nb0rghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+
+ActionView::TemplateError (github_repository_members_url failed to generate from {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :controller=>"github/repository/repositories", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :action=>"members", :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}, expected: {:controller=>"github/repository/repositories", :action=>"members"}, diff: {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}) on line #6 of app/views/github/_repositories.html.erb:
+3:   <ul class="repositories">
+4:     <% repositories.each do |repository| %>
+5:       <li class="repository">
+6:         <%= link_to repository.name, github_repository_members_path(repository), :class => "repository_link" %>
+7:         <%= indicator %>
+8:       </li>
+9:     <% end %>
+
+    (eval):20:in `github_repository_members_path'
+    app/views/github/_repositories.html.erb:6
+    app/views/github/_repositories.html.erb:4:in `each'
+    app/views/github/_repositories.html.erb:4
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/github/users_controller.rb:7:in `repositories'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `original_process'
+
+Rendered rescues/_trace (109.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing PivotalTracker::UsersController#login (for 127.0.0.1 at 2010-09-07 12:50:28) [POST]
+  Parameters: {"authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik=", "pivotal_tracker"=>{"password"=>"s4pn4s0lut10ns", "login"=>"rien@sapnasolutions.com"}}
+Rendered pivotal_tracker/_projects (2.8ms)
+Completed in 4511ms (View: 6, DB: 1) | 200 OK [http://localhost/pivotal_tracker/users/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing PivotalTracker::ProjectsController#members (for 127.0.0.1 at 2010-09-07 12:51:51) [POST]
+  Parameters: {"project_id"=>"87649"}
+Rendered pivotal_tracker/_members (1.7ms)
+Completed in 6511ms (View: 5, DB: 1) | 200 OK [http://localhost/pivotal_tracker/project/87649/members]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing ApplicationController#login (for 127.0.0.1 at 2010-09-07 12:54:13) [GET]
+Rendering template within layouts/application
+Rendering application/login
+Rendered shared/_login (7.1ms)
+Rendered pivotal_tracker/_login (7.5ms)
+Rendered shared/_login (3.0ms)
+Rendered github/_login (3.2ms)
+Rendered layouts/_messages (0.1ms)
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:54:22) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nb0rghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+
+ActionView::TemplateError (github_repository_members_url failed to generate from {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :controller=>"github/repository/repositories", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :action=>"members", :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}, expected: {:controller=>"github/repository/repositories", :action=>"members"}, diff: {:owner=>"riencroonenborghs", :homepage=>"http://foobar", :pushed_at=>"2010/09/06 22:19:24 -0700", :open_issues=>0, :url=>"http://github.com/riencroonenborghs/foo-bar-1", :has_downloads=>true, :created_at=>"2010/09/06 22:17:25 -0700", :fork=>false, :has_issues=>true, :description=>"olaf polaf", :private=>false, :has_wiki=>true, :forks=>0, :name=>"foo-bar-1", :watchers=>1}) on line #6 of app/views/github/_repositories.html.erb:
+3:   <ul class="repositories">
+4:     <% repositories.each do |repository| %>
+5:       <li class="repository">
+6:         <%= link_to repository.name, github_repository_members_path(repository), :class => "repository_link" %>
+7:         <%= indicator %>
+8:       </li>
+9:     <% end %>
+
+    (eval):20:in `github_repository_members_path'
+    app/views/github/_repositories.html.erb:6
+    app/views/github/_repositories.html.erb:4:in `each'
+    app/views/github/_repositories.html.erb:4
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/github/users_controller.rb:7:in `repositories'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `original_process'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+== JZIP: Compiling templates...
+== JZIP: Skipping  '/Users/rien/code/sapna/git/sapna-liveliness/assets/jzip/defaults.jz'
+== JZIP: Done
+
+
+Processing Github::UsersController#repositories (for 127.0.0.1 at 2010-09-07 12:55:01) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00n3nb0rghs", "login"=>"riencroonenborghs"}, "authenticity_token"=>"6POUe3mtoKdSJcVRd3eVb7w2KsnYJ/KpEQ70fc7o8ik="}
+Rendered github/_repositories (2.1ms)
+Completed in 1183ms (View: 6, DB: 0) | 200 OK [http://localhost/github/users/repositories]

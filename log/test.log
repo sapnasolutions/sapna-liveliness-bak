@@ -285,3 +285,330 @@ Completed in 1309ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal
 Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 10:29:52) [POST]
   Parameters: {"project_id"=>"foo"}
 Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 10:59:08) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (11.4ms)
+Rendered pivotal_tracker/_login (13.3ms)
+Completed in 16ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 10:59:08) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (4.8ms)
+Rendered pivotal_tracker/_login (5.5ms)
+Completed in 2292ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 10:59:10) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"rien@sapnasolutions.com", "password"=>"s4pn4s0lut10ns"}}
+Rendered pivotal_tracker/_projects (2.4ms)
+Completed in 4697ms (View: 3, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 10:59:15) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.6ms)
+Completed in 2141ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 10:59:17) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (1.9ms)
+Completed in 1911ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 10:59:19) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:03) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (18.2ms)
+Rendered pivotal_tracker/_login (20.1ms)
+Completed in 23ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:03) [POST]
+  Parameters: {"pivotal_tracker"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (5.1ms)
+Rendered pivotal_tracker/_login (5.9ms)
+Completed in 3136ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:06) [POST]
+  Parameters: {"pivotal_tracker"=>{"password"=>"s4pn4s0lut10ns", "login"=>"rien@sapnasolutions.com"}}
+Rendered pivotal_tracker/_projects (3.2ms)
+Completed in 3172ms (View: 4, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 11:22:09) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.2ms)
+Completed in 2962ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 11:22:12) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (2.0ms)
+Completed in 2546ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 11:22:15) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:15) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:15) [POST]
+  Parameters: {"github"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (3.3ms)
+Rendered github/_login (4.2ms)
+Completed in 6ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/login?github%5Blogin%5D=foo&github%5Bpassword%5D=bar]
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 11:22:15) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00nenb0rghs", "login"=>"riencroonenborghs"}}
+Rendered shared/_login (4.0ms)
+Rendered github/_login (4.5ms)
+Completed in 6ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/login?github%5Blogin%5D=riencroonenborghs&github%5Bpassword%5D=r13ncr00nenb0rghs]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:28:54) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (25.6ms)
+Rendered pivotal_tracker/_login (28.0ms)
+Completed in 33ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:28:54) [POST]
+  Parameters: {"pivotal_tracker"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (4.0ms)
+Rendered pivotal_tracker/_login (4.5ms)
+Completed in 2862ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:28:57) [POST]
+  Parameters: {"pivotal_tracker"=>{"password"=>"s4pn4s0lut10ns", "login"=>"rien@sapnasolutions.com"}}
+Rendered pivotal_tracker/_projects (2.6ms)
+Completed in 3468ms (View: 3, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:01) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.1ms)
+Completed in 2571ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:03) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (1.9ms)
+Completed in 1618ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:05) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:05) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:05) [POST]
+  Parameters: {"github"=>{"password"=>"bar", "login"=>"foo"}}
+
+
+Processing Github::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:05) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00nenb0rghs", "login"=>"riencroonenborghs"}}
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:31) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (12.9ms)
+Rendered pivotal_tracker/_login (14.9ms)
+Completed in 18ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:31) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (4.6ms)
+Rendered pivotal_tracker/_login (5.2ms)
+Completed in 2037ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:29:33) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"rien@sapnasolutions.com", "password"=>"s4pn4s0lut10ns"}}
+Rendered pivotal_tracker/_projects (3.2ms)
+Completed in 2939ms (View: 4, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:36) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.2ms)
+Completed in 2120ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:38) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (1.8ms)
+Completed in 1306ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:29:39) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:29:39) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:29:39) [POST]
+  Parameters: {"github"=>{"login"=>"foo", "password"=>"bar"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:29:39) [POST]
+  Parameters: {"github"=>{"login"=>"riencroonenborghs", "password"=>"r13ncr00nenb0rghs"}}
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:31:04) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (11.6ms)
+Rendered pivotal_tracker/_login (13.6ms)
+Completed in 17ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:31:04) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (4.6ms)
+Rendered pivotal_tracker/_login (5.4ms)
+Completed in 2296ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:31:07) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"rien@sapnasolutions.com", "password"=>"s4pn4s0lut10ns"}}
+Rendered pivotal_tracker/_projects (2.7ms)
+Completed in 16074ms (View: 3, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:31:23) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.2ms)
+Completed in 3272ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:31:26) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (1.8ms)
+Completed in 1624ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:31:28) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:31:28) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:31:28) [POST]
+  Parameters: {"github"=>{"login"=>"foo", "password"=>"bar"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:31:28) [POST]
+  Parameters: {"github"=>{"login"=>"riencroonenborghs", "password"=>"r13ncr00nenb0rghs"}}
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:34:09) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (11.2ms)
+Rendered pivotal_tracker/_login (12.9ms)
+Completed in 16ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:34:09) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (4.2ms)
+Rendered pivotal_tracker/_login (4.8ms)
+Completed in 1766ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=foo&pivotal_tracker%5Bpassword%5D=bar]
+
+
+Processing PivotalTracker::UsersController#login (for 0.0.0.0 at 2010-09-07 12:34:11) [POST]
+  Parameters: {"pivotal_tracker"=>{"login"=>"rien@sapnasolutions.com", "password"=>"s4pn4s0lut10ns"}}
+Rendered pivotal_tracker/_projects (2.5ms)
+Completed in 4412ms (View: 3, DB: 0) | 200 OK [http://test.host/pivotal_tracker/users/login?pivotal_tracker%5Blogin%5D=rien%40sapnasolutions.com&pivotal_tracker%5Bpassword%5D=s4pn4s0lut10ns]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:34:15) [POST]
+  Parameters: {"project_id"=>"114774"}
+Rendered pivotal_tracker/_members (1.3ms)
+Completed in 2265ms (View: 2, DB: 0) | 200 OK [http://test.host/pivotal_tracker/projects/members?project_id=114774]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:34:17) [POST]
+  Parameters: {"project_id"=>"foo"}
+Rendered pivotal_tracker/_projects (2.0ms)
+Completed in 1697ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing PivotalTracker::ProjectsController#members (for 0.0.0.0 at 2010-09-07 12:34:19) [POST]
+  Parameters: {"project_id"=>"foo"}
+Completed in 1ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/pivotal_tracker/projects/members?project_id=foo]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:34:19) [POST]
+  Parameters: {"foo"=>{"login"=>"foo", "password"=>"bar"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:34:19) [POST]
+  Parameters: {"github"=>{"login"=>"foo", "password"=>"bar"}}
+Rendered shared/_login (3.7ms)
+Rendered github/_login (4.7ms)
+Completed in 6ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/repositories?github%5Blogin%5D=foo&github%5Bpassword%5D=bar]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:34:19) [POST]
+  Parameters: {"github"=>{"login"=>"riencroonenborghs", "password"=>"r13ncr00nenb0rghs"}}
+Rendered shared/_login (3.4ms)
+Rendered github/_login (3.9ms)
+Completed in 5ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/repositories?github%5Blogin%5D=riencroonenborghs&github%5Bpassword%5D=r13ncr00nenb0rghs]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:36:39) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:36:39) [POST]
+  Parameters: {"github"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (11.1ms)
+Rendered github/_login (13.0ms)
+Completed in 14ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/repositories?github%5Blogin%5D=foo&github%5Bpassword%5D=bar]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:36:39) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00nenb0rghs", "login"=>"riencroonenborghs"}}
+Rendered shared/_login (3.9ms)
+Rendered github/_login (4.6ms)
+Completed in 7ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/repositories?github%5Blogin%5D=riencroonenborghs&github%5Bpassword%5D=r13ncr00nenb0rghs]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:45:36) [POST]
+  Parameters: {"foo"=>{"password"=>"bar", "login"=>"foo"}}
+Rendered shared/_login (11.3ms)
+Rendered github/_login (13.2ms)
+Completed in 16ms (View: 0, DB: 0) | 400 Bad Request [http://test.host/github/users/repositories?foo%5Blogin%5D=foo&foo%5Bpassword%5D=bar]
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:45:36) [POST]
+  Parameters: {"github"=>{"password"=>"bar", "login"=>"foo"}}
+
+
+Processing Github::UsersController#repositories (for 0.0.0.0 at 2010-09-07 12:45:38) [POST]
+  Parameters: {"github"=>{"password"=>"r13ncr00nenb0rghs", "login"=>"riencroonenborghs"}}

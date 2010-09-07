@@ -5,3 +5,4 @@
 
 //= require liveliness/messages
 //= require liveliness/pivotal_tracker
+//= require liveliness/github
