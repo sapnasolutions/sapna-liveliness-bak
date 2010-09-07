@@ -5,17 +5,16 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :pivotal_tracker do |pivotal_tracker|
     pivotal_tracker.resource :users, :only => [:login], :collection => { :login => :post }
-    pivotal_tracker.namespace :project do |project|
-      project.members ':project_id/members', :controller => "projects", :action => "members"
-    end
+    pivotal_tracker.project_members 'projects/:project_id/members', :controller => "projects", :action => "members" 
+    pivotal_tracker.member_dates 'projects/:project_id/members/:member_id/dates', :controller => "members", :action => "dates" 
   end
 
-  map.namespace :github do |github|
-    github.resource :users, :only => [:repositories], :collection => { :repositories => :post }
-    github.namespace :repository do |repository|
-      repository.members ':repository_name/members', :controller => "repositories", :action => "members"
-    end  
-  end  
+  # map.namespace :github do |github|
+  #   github.resource :users, :only => [:repositories], :collection => { :repositories => :post }
+  #   github.namespace :repository do |repository|
+  #     repository.members ':repository_name/members', :controller => "repositories", :action => "members"
+  #   end  
+  # end  
   
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -56,6 +55,6 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  # map.connect ':controller/:action/:id'
+  # map.connect ':controller/:action/:id.:format'
 end

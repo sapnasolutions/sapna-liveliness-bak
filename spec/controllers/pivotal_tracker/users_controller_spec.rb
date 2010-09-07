@@ -15,6 +15,12 @@ describe PivotalTracker::UsersController, "logging into pivotal tracker" do
     response.should include_text("could not get token")
   end
 
+  it "should return error when login failed: wrong password" do
+    post :login, :pivotal_tracker => { :login => "rien@sapnasolutions.com", :password => "thatissowronglike" }
+    response.should_not be_success
+    response.should include_text("could not get token")
+  end
+
   it "should return projects when login successful" do
     post :login, :pivotal_tracker => { :login => "rien@sapnasolutions.com", :password => "s4pn4s0lut10ns" }
     response.should be_success

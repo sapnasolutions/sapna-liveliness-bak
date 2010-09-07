@@ -3,9 +3,7 @@ module ApplicationHelper
   
   def indicator(options = {})
     options = {:size => :small}.merge(options)
-    content_tag :span, :class => "indicator #{options[:class]}", :style => "display: none" do
-      image_tag("indicators/#{options[:size]}.gif") 
-    end
+    render :partial => "/shared/indicator", :locals => { :options => options }
   end
   
 end

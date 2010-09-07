@@ -15,3 +15,11 @@ form.formtastic fieldset {
 
 .upload.new p.inline-errors {
   color: #dd0000; }
+
+form.formtastic fieldset > ol > li {
+  margin-bottom: 0; }
+
+form.formtastic .submit {
+  font-size: 150%; }
+form.formtastic fieldset.buttons {
+  padding-left: 0; }

@@ -22,5 +22,36 @@ describe Github::Repository do
     repositories = Github::Repository.all("riencroonenborghs", "r13ncr00n3nb0rghs")
     repositories.should_not be_empty
   end
+  
+  
+  it "should not find collaborators without login" do
+    collaborators = Github::Repository.new.collaborators(nil, "foo", "bar")
+    collaborators.should be_empty
+  end
+
+  it "should not find collaborators without password" do
+    collaborators = Github::Repository.new.collaborators("foo", nil, "bar")
+    collaborators.should be_empty
+  end
+  
+  it "should not find collaborators with wrong login" do
+    collaborators = Github::Repository.new.collaborators("riencroonenborghs1", "bar", "baz")
+    collaborators.should be_empty
+  end
+
+  it "should not find collaborators with nil repository name" do
+    collaborators = Github::Repository.new.collaborators("riencroonenborghs1", "bar", nil)
+    collaborators.should be_empty
+  end
+
+  it "should not find collaborators with wrong repository name" do
+    collaborators = Github::Repository.new.collaborators("riencroonenborghs", "r13ncr00nenb0rghs", "somethingthatiswrong")
+    collaborators.should be_empty
+  end
+  
+  it "should find collaborators" do
+    repositories = Github::Repository.new.collaborators("riencroonenborghs", "r13ncr00n3nb0rghs", "liveliness")
+    repositories.first.collaborators.should_not be_empty
+  end
     
 end

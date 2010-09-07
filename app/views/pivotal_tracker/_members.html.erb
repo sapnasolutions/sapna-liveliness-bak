@@ -1,9 +1,14 @@
-<div class="memberships_wrapper">
-  <h2>Project '<%=h project.name %>': the members</h2>
-  <ul class="memberships">
-    <% memberships.each do |membership| %>
-      <li class="membership"><%= link_to membership.name, "#", :class => "membership_link" %></li>
+<div class="members_wrapper">  
+  <div class="members">
+    <h2>Project '<%=h project.name %>': the members</h2>
+    <ul>
+    <% members.each do |member| %>
+      <li class="member">
+        <%= link_to member.name, pivotal_tracker_member_dates_path(project, member), :class => "member_link" %>
+      </li>
     <% end %>
-  </ul>
-  Click on one of the project's members to select...
+    </ul>
+    Click on one of the project's members to continue...
+  </div>
+  <%= indicator :size => :big, :class => "big_indicator", :message => "loading dates ..." %><br />
 </div>
