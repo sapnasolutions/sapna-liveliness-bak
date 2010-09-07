@@ -15,13 +15,17 @@
   <div id="page">
     
     <div id="header">
-      <h1>Liveliness</h1>
+      <h1><%= link_to "Liveliness", root_path %></h1>
       <h4>beta</h4>
     </div>
     
     <div id="content">
       <%= yield %>
       
+    </div>
+    
+    <div id="footer">
+      <%= render :partial => "/shared/start_over" %>
     </div>
     
   </div>

@@ -3,6 +3,7 @@
 //= require jquery/jrails
 //= require jquery/json2
 
+//= require liveliness/main
 //= require liveliness/messages
 //= require liveliness/pivotal_tracker
 //= require liveliness/github

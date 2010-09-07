@@ -9,22 +9,41 @@ body {
 
 a {
   color: #f00;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 3px; }
+  a:hover {
+    color: #fff;
+    background: #f00; }
 
 #page #header {
   width: 300px;
-  margin: auto; }
+  margin: auto;
+  font-family: "Trebuchet MS"; }
   #page #header h1 {
+    padding-top: 20px;
     font-size: 600%; }
+    #page #header h1 a {
+      color: #000; }
+      #page #header h1 a:hover {
+        color: #000;
+        background: #fff; }
   #page #header h4 {
-    font-size: 130%;
+    font-size: 100%;
     color: red;
     position: relative;
     top: -70px;
-    left: 320px; }
-#page #content {
+    left: 325px; }
+#page #content, #page #footer {
   width: 900px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 50px;
+  border-top: 1px solid #ddd;
+  padding-top: 50px; }
+#page #footer {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center; }
 
 .messages {
   font-size: 200%;
@@ -52,6 +71,14 @@ a {
 .clear {
   clear: both; }
 
-#page #content .wrapper .pivotal_tracker,
-#page #content .wrapper .github {
-  width: 400px; }
+#page #content .wrapper .pivotal_tracker_box, #page #content .wrapper .github_box {
+  width: 400px;
+  padding: 20px;
+  background: #efefef; }
+#page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .projects_wrapper, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .memberships_wrapper {
+  padding: 10px; }
+#page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .projects_wrapper h2, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .memberships_wrapper h2 {
+  padding-bottom: 10px; }
+#page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .projects_wrapper ul, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .memberships_wrapper ul {
+  list-style-type: circle;
+  padding-bottom: 10px; }

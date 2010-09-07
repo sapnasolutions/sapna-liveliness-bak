@@ -9,12 +9,6 @@ describe Github::UsersController, "logging into github" do
     response.should include_text("could not get repositories")
   end
 
-  it "should return error when login failed: wrong login" do
-    post :repositories, :github => { :login => "foo", :password => "bar" }
-    response.should_not be_success
-    response.should include_text("could not get repositories")
-  end
-
   it "should return projects when login successful" do
     post :repositories, :github => { :login => "riencroonenborghs", :password => "r13ncr00nenb0rghs" }
     response.should be_success
