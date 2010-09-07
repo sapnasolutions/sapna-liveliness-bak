@@ -11,8 +11,6 @@ class ApplicationController < ActionController::Base
   
   def login
     session[:pivotal_tracker_token] = nil
-  #   session[:pivotal_tracker_project_id] = nil
-  #   session[:pivotal_tracker_member_id] = nil
   end
   
 end

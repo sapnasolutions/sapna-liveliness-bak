@@ -6,19 +6,19 @@ describe PivotalTracker::UsersController, "logging into pivotal tracker" do
   it "should return error when login failed: wrong params hash" do
     post :login, :foo => { :login => "foo", :password => "bar" }
     response.should_not be_success
-    response.should include_text("could not get token")
+    response.should include_text("no login information found")
   end
 
   it "should return error when login failed: wrong login" do
     post :login, :pivotal_tracker => { :login => "foo", :password => "bar" }
     response.should_not be_success
-    response.should include_text("could not get token")
+    response.should include_text("no token found")
   end
 
   it "should return error when login failed: wrong password" do
     post :login, :pivotal_tracker => { :login => "rien@sapnasolutions.com", :password => "thatissowronglike" }
     response.should_not be_success
-    response.should include_text("could not get token")
+    response.should include_text("no token found")
   end
 
   it "should return projects when login successful" do

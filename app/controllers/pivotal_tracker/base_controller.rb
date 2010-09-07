@@ -2,6 +2,7 @@ require 'pivotal_tracker/project'
 
 class PivotalTracker::BaseController < ApplicationController
 
+  class NoLoginFoundException     < Exception; end
   class NoTokenFoundException     < Exception; end
   class NoProjectsFoundException  < Exception; end
   class NoProjectFoundException   < Exception; end

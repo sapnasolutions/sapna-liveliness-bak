@@ -1,16 +1,26 @@
 require 'pivotal_tracker/token'
 
-class PivotalTracker::UsersController < ApplicationController
+class PivotalTracker::UsersController < PivotalTracker::BaseController
+
   def login
-    if !params[:pivotal_tracker].nil? and (token = PivotalTracker::Token.get_token(params[:pivotal_tracker][:login], params[:pivotal_tracker][:password]))
-      session[:pivotal_tracker_token] = token
-      projects = PivotalTracker::Project.all(token)
-      render :partial => "pivotal_tracker/projects", :locals => { :projects => projects }, :layout => false
-    else
-      render :json => {
-        :form => render_to_string(:partial => "pivotal_tracker/login"),
-        :error_message => "could not get token"
-      }, :status => 400, :layout => false
-    end
+    raise NoLoginFoundException.new unless params[:pivotal_tracker]
+    raise NoTokenFoundException.new unless (token = get_token(params[:pivotal_tracker]))
+    session[:pivotal_tracker_token] = token
+    render :partial => "pivotal_tracker/projects", :locals => { :projects => get_projects(token) }, :layout => false
+  rescue NoLoginFoundException
+    render_json_error("please login again", "no login information found")
+  rescue NoTokenFoundException
+    render_json_error("please login again", "no token found")
   end
+  
+  private
+  
+  def get_token(params)
+    PivotalTracker::Token.get_token(params[:login], params[:password])
+  end
+  
+  def get_projects(token)
+    PivotalTracker::Project.all(token)
+  end
+  
 end
