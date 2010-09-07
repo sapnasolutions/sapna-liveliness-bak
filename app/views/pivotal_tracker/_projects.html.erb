@@ -1,0 +1,12 @@
+<div class="projects_wrapper">
+  <h2>Your projects</h2>
+  <ul class="projects">
+    <% projects.each do |project| %>
+      <li class="project">
+        <%= link_to project.name, pivotal_tracker_project_members_path(project), :class => "project_link" %>
+        <%= indicator %>
+      </li>
+    <% end %>
+  </ul>
+  Click on one of the projects to see it's members...
+</div>

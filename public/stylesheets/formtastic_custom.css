@@ -1,0 +1,17 @@
+form.formtastic fieldset {
+  border: none; }
+  form.formtastic fieldset ol {
+    list-style-type: none; }
+    form.formtastic fieldset ol li {
+      padding: 5px 5px 5px 0; }
+      form.formtastic fieldset ol li label, form.formtastic fieldset ol li input {
+        display: block; }
+      form.formtastic fieldset ol li label abbr {
+        border: none; }
+      form.formtastic fieldset ol li input.large_input {
+        font-size: 145%; }
+      form.formtastic fieldset ol li p.inline-errors {
+        color: #dd0000; }
+
+.upload.new p.inline-errors {
+  color: #dd0000; }

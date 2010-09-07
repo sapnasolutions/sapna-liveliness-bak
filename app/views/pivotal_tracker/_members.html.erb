@@ -1,0 +1,9 @@
+<div class="memberships_wrapper">
+  <h2>Project '<%=h project.name %>': the members</h2>
+  <ul class="memberships">
+    <% memberships.each do |membership| %>
+      <li class="membership"><%= link_to membership.name, "#", :class => "membership_link" %></li>
+    <% end %>
+  </ul>
+  Click on one of the project's members to select...
+</div>

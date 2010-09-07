@@ -1,0 +1,7 @@
+//= require jquery/jquery
+//= require jquery/jquery-ui
+//= require jquery/jrails
+//= require jquery/json2
+
+//= require liveliness/messages
+//= require liveliness/pivotal_tracker

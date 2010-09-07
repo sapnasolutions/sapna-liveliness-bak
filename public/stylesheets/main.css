@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: #000;
+  background: #fff;
+  font-size: 12px; }
+
+a {
+  color: #f00;
+  text-decoration: none; }
+
+.messages {
+  font-size: 200%;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.messages.error {
+  background: #f00; }
+
+.messages.notice {
+  background: #009316; }
+
+.messages.padding {
+  padding: 20px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.pivotal_tracker_wrapper,
+.github_login {
+  width: 400px; }
