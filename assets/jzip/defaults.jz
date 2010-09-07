@@ -1,7 +1,10 @@
 //= require jquery/jquery
 //= require jquery/jquery-ui
 //= require jquery/jrails
-//= require jquery/json2
+//= require jquery/datePicker
+
+//= require extensions/json2
+//= require extensions/dates
 
 //= require liveliness/main
 //= require liveliness/messages

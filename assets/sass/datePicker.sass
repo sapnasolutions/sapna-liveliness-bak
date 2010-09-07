@@ -1,0 +1,140 @@
+table.jCalendar
+  border: 1px solid #000
+  background: #aaa
+  border-collapse: separate
+  border-spacing: 2px
+
+  th
+    background: #333
+    color: #fff
+    font-weight: bold
+    padding: 3px 5px
+
+  td
+    background: #ccc
+    color: #000
+    padding: 3px 5px
+    text-align: center
+
+    &.other-month
+      background: #ddd
+      color: #aaa
+
+    &.today
+      background: #666
+      color: #fff
+
+    &.selected
+      background: #f66
+      color: #fff
+
+      &.dp-hover
+        background: #f33
+        color: #fff
+
+    &.dp-hover
+      background: #fff
+      color: #000
+
+  tr
+    &.activeWeekHover td
+      background: #fff
+      color: #000
+
+    &.selectedWeek td
+      background: #f66
+      color: #fff
+
+  td
+    &.disabled
+      background: #bbb
+      color: #888
+
+      &.dp-hover
+        background: #bbb
+        color: #888
+
+    &.unselectable
+      background: #bbb
+      color: #888
+
+      &:hover, &.dp-hover
+        background: #bbb
+        color: #888
+
+
+div
+  &.dp-popup
+    position: relative
+    background: #ccc
+    font-size: 10px
+    font-family: arial, sans-serif
+    padding: 2px
+    width: 171px
+    line-height: 1.2em
+
+  &#dp-popup
+    position: absolute
+    z-index: 199
+
+  &.dp-popup h2
+    font-size: 12px
+    text-align: center
+    margin: 2px 0
+    padding: 0
+
+
+a#dp-close
+  font-size: 11px
+  padding: 4px 0
+  text-align: center
+  display: block
+
+  &:hover
+    text-decoration: underline
+
+
+div.dp-popup
+  a
+    color: #000
+    text-decoration: none
+    padding: 3px 2px 0
+
+  div
+    &.dp-nav-prev
+      position: absolute
+      top: 2px
+      left: 4px
+      width: 100px
+
+      a
+        float: left
+        cursor: pointer
+
+    &.dp-nav-next a
+      cursor: pointer
+
+    &.dp-nav-prev a.disabled
+      cursor: default
+
+    &.dp-nav-next
+      position: absolute
+      top: 2px
+      right: 4px
+      width: 100px
+
+      a
+        float: right
+
+        &.disabled
+          cursor: default
+
+  a.disabled
+    cursor: default
+    color: #aaa
+
+  td
+    cursor: pointer
+
+    &.disabled
+      cursor: default

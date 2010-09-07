@@ -66,3 +66,13 @@ $('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member
   });
   event.preventDefault();
 });
+
+function init_date_picker(class) {
+  $(function() {
+  	$(class)
+  		.datePicker({inline:true})
+  		.bind('dateSelected', function(e, selectedDate, $td) {
+  				console.log('You selected ' + selectedDate);
+  			});
+  });
+}

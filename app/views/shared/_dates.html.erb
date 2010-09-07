@@ -1,6 +1,30 @@
 <div class="dates_wrapper">  
   <div class="dates">
-    <h2>The interval in which you want the report to be generated</h2>
-    foo bar baz
+    <h2>Generate a report between:</h2>
+    
+    <% semantic_form_for :date_interval do |form| %>    
+      <% form.inputs do %>
+        <%= form.input :start_date, :as => :hidden %>
+        <%= form.input :end_date, :as => :hidden %>
+        <div class="start_date_wrapper left">      
+          Start date:
+          <div class="start_date"></div>
+        </div>
+        <div class="end_date_wrapper left">      
+          End date:
+          <div class="end_date"></div>
+        </div>
+        <div class="clear"></div>
+      <% end %>
+      <% form.buttons do %>
+        <%= submit_tag "Generate!", :class => "submit" %>
+      <% end %>
+    <% end %>
+    
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  init_date_picker('.start_date');
+  init_date_picker('.end_date');
+</script>

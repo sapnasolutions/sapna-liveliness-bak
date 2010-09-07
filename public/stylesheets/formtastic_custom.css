@@ -20,6 +20,8 @@ form.formtastic fieldset > ol > li {
   margin-bottom: 0; }
 
 form.formtastic .submit {
-  font-size: 150%; }
+  font-size: 150%;
+  border: 1px solid #3d3d3d;
+  padding: 5px; }
 form.formtastic fieldset.buttons {
   padding-left: 0; }

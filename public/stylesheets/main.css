@@ -82,3 +82,5 @@ a {
 #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .projects_wrapper ul, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .members_wrapper ul, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .dates_wrapper ul {
   list-style-type: circle;
   padding-bottom: 10px; }
+#page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .dates_wrapper .start_date_wrapper, #page #content .wrapper .pivotal_tracker_box .pivotal_tracker_wrapper .dates_wrapper .end_date_wrapper {
+  padding-right: 5px; }
