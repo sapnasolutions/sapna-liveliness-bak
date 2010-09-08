@@ -4,7 +4,7 @@
     <ul>
     <% collaborators.each do |collaborator| %>
       <li class="collaborator">
-        <%= link_to collaborator.name, github_collaborator_dates_path(repository, collaborator), :class => "collaborator_link" %>
+        <%= link_to collaborator.name, github_collaborator_dates_path(:repository_name => repository.name, :collaborator_name => collaborator.name), :class => "collaborator_link" %>
       </li>
     <% end %>
     </ul>

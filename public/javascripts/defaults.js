@@ -2402,33 +2402,11 @@ Date.fullYearStart = '20';
 	
 })();
 
-function base_ajax_post() {
-  
-}
-
-function show_message(type, message) {
-  $('.messages.'+type).html(message);
-  $('.messages.'+type).addClass('padding');
-  $('.messages.'+type).show();
-  setTimeout(function(){
-    $('.messages.'+type).fadeOut();
-  }, 3000);
-}
-
-function show_error_message(message) { show_message('error', message); }
-function show_notice_message(message) { show_message('notice', message); }
-
-$('.application.login .pivotal_tracker_wrapper form').live('submit', function(event){
-  var form = $(this);
-  var url = form.attr('action');
-  var indicator = form.find('.indicator');
-  var button = form.find('input.submit');
-  var wrapper = form.closest('.pivotal_tracker_wrapper');
-  
+function base_ajax_form_post(url, data, button, indicator, wrapper) {
   $.ajax({
     url: url,
     type: 'POST',
-    data: form.serialize(),
+    data: data,
     beforeSend: function() { button.hide(); indicator.show(); },
     complete: function() { button.hide(); indicator.show(); },
     success: function(s) { wrapper.html(s); },
@@ -2438,22 +2416,14 @@ $('.application.login .pivotal_tracker_wrapper form').live('submit', function(ev
       show_error_message(json.error_message);
     }
   });
-  
-  event.preventDefault();
-});
+}
 
-$('.application.login .pivotal_tracker_wrapper .projects_wrapper .project a.project_link').live('click', function(event){
-  var a = $(this);
-  var url = a.attr('href');
-  var list = a.closest('.projects');
-  var indicator = a.closest('.projects_wrapper').find('.big_indicator');
-  var wrapper = a.closest('.pivotal_tracker_wrapper');  
-  
+function base_ajax_post(url, button, indicator, wrapper) {
   $.ajax({
     url: url,
     type: 'POST',
-    beforeSend: function() { list.hide(); indicator.show(); },
-    complete: function() { list.show(); indicator.hide(); },
+    beforeSend: function() { button.hide(); indicator.show(); },
+    complete: function() { button.hide(); indicator.show(); },
     success: function(s) { wrapper.html(s); },
     error: function(e) { 
       json = JSON.parse(e.responseText);
@@ -2461,21 +2431,13 @@ $('.application.login .pivotal_tracker_wrapper .projects_wrapper .project a.proj
       show_error_message(json.error_message);
     }
   });
-  event.preventDefault();
-});
+}
 
-$('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member_link').live('click', function(event){
-  var a = $(this);
-  var url = a.attr('href');
-  var list = a.closest('.members');
-  var indicator = a.closest('.members_wrapper').find('.big_indicator');
-  var wrapper = a.closest('.pivotal_tracker_wrapper');  
-  
+function base_ajax_get(url, button, indicator, wrapper) {
   $.ajax({
     url: url,
-    type: 'POST',
-    beforeSend: function() { list.hide(); indicator.show(); },
-    complete: function() { list.show(); indicator.hide(); },
+    beforeSend: function() { button.hide(); indicator.show(); },
+    complete: function() { button.hide(); indicator.show(); },
     success: function(s) { wrapper.html(s); },
     error: function(e) { 
       json = JSON.parse(e.responseText);
@@ -2483,8 +2445,7 @@ $('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member
       show_error_message(json.error_message);
     }
   });
-  event.preventDefault();
-});
+}
 
 function init_date_picker(class, hidden_input_field) {
   $(function() {
@@ -2501,6 +2462,58 @@ function init_date_picker(class, hidden_input_field) {
   });
 }
 
+function show_message(type, message) {
+  $('.messages.'+type).html(message);
+  $('.messages.'+type).addClass('padding');
+  $('.messages.'+type).show();
+  setTimeout(function(){
+    $('.messages.'+type).fadeOut();
+  }, 3000);
+}
+
+function show_error_message(message) { show_message('error', message); }
+function show_notice_message(message) { show_message('notice', message); }
+
+// ========== LOGIN ==========
+$('.application.login .pivotal_tracker_wrapper form').live('submit', function(event){
+  var form = $(this);
+  var url = form.attr('action');
+  var indicator = form.find('.indicator');
+  var button = form.find('input.submit');
+  var wrapper = form.closest('.pivotal_tracker_wrapper');
+  
+  base_ajax_form_post(url, form.serialize(), button, indicator, wrapper);
+  
+  event.preventDefault();
+});
+
+// ========== PROJECT ==========
+$('.application.login .pivotal_tracker_wrapper .projects_wrapper .project a.project_link').live('click', function(event){
+  var a = $(this);
+  var url = a.attr('href');
+  var list = a.closest('.projects');
+  var indicator = a.closest('.projects_wrapper').find('.big_indicator');
+  var wrapper = a.closest('.pivotal_tracker_wrapper');  
+  
+  base_ajax_post(url, list, indicator, wrapper);
+    
+  event.preventDefault();
+});
+
+// ========== MEMBERS ==========
+$('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member_link').live('click', function(event){
+  var a = $(this);
+  var url = a.attr('href');
+  var list = a.closest('.members');
+  var indicator = a.closest('.members_wrapper').find('.big_indicator');
+  var wrapper = a.closest('.pivotal_tracker_wrapper');  
+  
+  base_ajax_post(url, list, indicator, wrapper);
+
+  event.preventDefault();
+});
+
+// ========== DATES ==========
 $('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live('submit', function(event){
   var form = $(this);
   var url = form.attr('action');
@@ -2508,18 +2521,43 @@ $('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live
   var indicator = form.closest('.dates_wrapper').find('.big_indicator');
   var wrapper = form.closest('.pivotal_tracker_wrapper');  
   
-  $.ajax({
-    url: url,
-    type: 'POST',
-    beforeSend: function() { list.hide(); indicator.show(); },
-    complete: function() { list.show(); indicator.hide(); },
-    success: function(s) { wrapper.html(s); },
-    error: function(e) { 
-      json = JSON.parse(e.responseText);
-      wrapper.html(json.form);
-      show_error_message(json.error_message);
-    }
-  });
+  base_ajax_post(url, list, indicator, wrapper);
+
+  event.preventDefault();
+});
+
+// ========== GO BACK: PROJECTS ==========
+$('.members_wrapper .navigation a.projects_list_link').live('click', function(event){
+  var url = $(this).attr('href');
+  var list = $(this).closest('.members');
+  var wrapper = $(this).closest('.members_wrapper');
+  var indicator = wrapper.find('.big_indicator_projects');
+
+  base_ajax_get(url, list, indicator, wrapper);
+  
+  event.preventDefault();
+});
+
+$('.dates_wrapper .navigation a.projects_list_link').live('click', function(event){
+  var url = $(this).attr('href');
+  var list = $(this).closest('.dates');
+  var wrapper = $(this).closest('.dates_wrapper');
+  var indicator = wrapper.find('.big_indicator_projects');
+
+  base_ajax_get(url, list, indicator, wrapper);
+  
+  event.preventDefault();
+});
+
+// ========== GO BACK: MEMBERS ==========
+$('.dates_wrapper .navigation a.members_list_link').live('click', function(event){
+  var url = $(this).attr('href');
+  var list = $(this).closest('.dates');
+  var wrapper = $(this).closest('.dates_wrapper');
+  var indicator = wrapper.find('.big_indicator_members');
+
+  base_ajax_get(url, list, indicator, wrapper);
+  
   event.preventDefault();
 });
 
@@ -2530,19 +2568,7 @@ $('.application.login .github_wrapper form').live('submit', function(event){
   var button = form.find('input.submit');
   var wrapper = form.closest('.github_wrapper');
   
-  $.ajax({
-    url: url,
-    type: 'POST',
-    data: form.serialize(),
-    beforeSend: function() { button.hide(); indicator.show(); },
-    complete: function() { button.hide(); indicator.show(); },
-    success: function(s) { wrapper.html(s); },
-    error: function(e) { 
-      json = JSON.parse(e.responseText);
-      wrapper.html(json.form);
-      show_error_message(json.error_message);
-    }
-  });
+  base_ajax_form_post(url, form.serialize(), button, indicator, wrapper);
   
   event.preventDefault();
 });
@@ -2554,17 +2580,7 @@ $('.application.login .github_wrapper .repositories_wrapper .repository a.reposi
   var indicator = a.closest('.repositories_wrapper').find('.big_indicator');
   var wrapper = a.closest('.github_wrapper');  
   
-  $.ajax({
-    url: url,
-    type: 'POST',
-    beforeSend: function() { list.hide(); indicator.show(); },
-    complete: function() { list.show(); indicator.hide(); },
-    success: function(s) { wrapper.html(s); },
-    error: function(e) { 
-      json = JSON.parse(e.responseText);
-      wrapper.html(json.form);
-      show_error_message(json.error_message);
-    }
-  });
+  base_ajax_post(url, list, indicator, wrapper);
+
   event.preventDefault();
 });

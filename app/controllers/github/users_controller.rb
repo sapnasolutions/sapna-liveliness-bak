@@ -10,6 +10,8 @@ class Github::UsersController < Github::BaseController
     render_json_error("please login again", "no login information found")
   rescue Octopussy::NotFound
     render_json_error("please login again", "no repositories found")
+  rescue Octopussy::Unauthorized
+    render_json_error("please login again", "no login information found")
   end
   
 end

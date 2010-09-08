@@ -9,6 +9,12 @@ describe Github::UsersController, "logging into github" do
     response.should include_text("no login information found")
   end
 
+  it "should return error when login failed: no information passed" do
+    post :login, :github => { :login => "", :password => "" }
+    response.should_not be_success
+    response.should include_text("no login information found")
+  end
+
   it "should return error with unexisting/wrong user" do
     post :login, :github => { :login => "someuserthatdoesntexist", :password => "bar" }
     response.should_not be_success

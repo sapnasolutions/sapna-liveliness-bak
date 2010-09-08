@@ -75,12 +75,15 @@ a {
   width: 400px;
   padding: 20px;
   background: #efefef; }
-  #page #content .wrapper .box .box_wrapper .projects_wrapper, #page #content .wrapper .box .box_wrapper .members_wrapper, #page #content .wrapper .box .box_wrapper .dates_wrapper, #page #content .wrapper .box .box_wrapper .repositories_wrapper {
+  #page #content .wrapper .box .box_wrapper .projects_wrapper, #page #content .wrapper .box .box_wrapper .members_wrapper, #page #content .wrapper .box .box_wrapper .dates_wrapper, #page #content .wrapper .box .box_wrapper .repositories_wrapper, #page #content .wrapper .box .box_wrapper .collaborators_wrapper {
     padding: 10px; }
-  #page #content .wrapper .box .box_wrapper .projects_wrapper h2, #page #content .wrapper .box .box_wrapper .members_wrapper h2, #page #content .wrapper .box .box_wrapper .dates_wrapper h2, #page #content .wrapper .box .box_wrapper .repositories_wrapper h2 {
+  #page #content .wrapper .box .box_wrapper .projects_wrapper h2, #page #content .wrapper .box .box_wrapper .members_wrapper h2, #page #content .wrapper .box .box_wrapper .dates_wrapper h2, #page #content .wrapper .box .box_wrapper .repositories_wrapper h2, #page #content .wrapper .box .box_wrapper .collaborators_wrapper h2 {
     padding-bottom: 10px; }
-  #page #content .wrapper .box .box_wrapper .projects_wrapper ul, #page #content .wrapper .box .box_wrapper .members_wrapper ul, #page #content .wrapper .box .box_wrapper .dates_wrapper ul, #page #content .wrapper .box .box_wrapper .repositories_wrapper ul {
+  #page #content .wrapper .box .box_wrapper .projects_wrapper ul, #page #content .wrapper .box .box_wrapper .members_wrapper ul, #page #content .wrapper .box .box_wrapper .dates_wrapper ul, #page #content .wrapper .box .box_wrapper .repositories_wrapper ul, #page #content .wrapper .box .box_wrapper .collaborators_wrapper ul {
     list-style-type: circle;
     padding-bottom: 10px; }
   #page #content .wrapper .box .box_wrapper .dates_wrapper .start_date_wrapper, #page #content .wrapper .box .box_wrapper .dates_wrapper .end_date_wrapper {
     padding-right: 5px; }
+#page #content .wrapper .navigation {
+  padding-top: 10px;
+  padding-bottom: 10px; }

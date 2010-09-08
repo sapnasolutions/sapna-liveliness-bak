@@ -1,12 +1,14 @@
-<div class="repositories_wrapper">
-  <h2>Your repositories</h2>
-  <ul class="repositories">
+<div class="repositories_wrapper">  
+  <div class="repositories">
+    <h2>Your repositories</h2>
+    <ul>
     <% repositories.each do |repository| %>
       <li class="repository">
         <%= link_to repository.name, github_repository_collaborators_path(:repository_name => repository.name), :class => "repository_link" %>
-        <%= indicator %>
       </li>
     <% end %>
-  </ul>
-  Click on one of the repositories to see its members...
+    </ul>
+    Click on one of the repositories to see its members...
+  </div>
+  <%= indicator :size => :big, :class => "big_indicator", :message => "loading collaborators ..." %><br />
 </div>
