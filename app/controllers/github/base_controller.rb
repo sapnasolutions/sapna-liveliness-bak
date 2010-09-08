@@ -21,4 +21,10 @@ class Github::BaseController < ApplicationController
     end
   end
   
+  def load_collaborator
+    if @repository and params[:collaborator_name]
+      @collaborator = @repository.collaborators.select{|x| x.name == params[:collaborator_name]}.first
+    end
+  end
+  
 end

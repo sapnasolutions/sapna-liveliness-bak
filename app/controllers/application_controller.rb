@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
   class NoRepositoriesFoundException  < Exception; end
   class NoRepositoryFoundException    < Exception; end
   class NoCredentialsFoundException   < Exception; end
+  class NoCollaboratorFoundException  < Exception; end
   
   def login
     session[:pivotal_tracker_token]       = nil

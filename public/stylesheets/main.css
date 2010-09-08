@@ -73,8 +73,9 @@ a {
 
 #page #content .wrapper .box {
   width: 400px;
-  padding: 20px;
-  background: #efefef; }
+  padding: 20px; }
+  #page #content .wrapper .box.left {
+    border-right: 1px solid #ddd; }
   #page #content .wrapper .box .box_wrapper .projects_wrapper, #page #content .wrapper .box .box_wrapper .members_wrapper, #page #content .wrapper .box .box_wrapper .dates_wrapper, #page #content .wrapper .box .box_wrapper .repositories_wrapper, #page #content .wrapper .box .box_wrapper .collaborators_wrapper {
     padding: 10px; }
   #page #content .wrapper .box .box_wrapper .projects_wrapper h2, #page #content .wrapper .box .box_wrapper .members_wrapper h2, #page #content .wrapper .box .box_wrapper .dates_wrapper h2, #page #content .wrapper .box .box_wrapper .repositories_wrapper h2, #page #content .wrapper .box .box_wrapper .collaborators_wrapper h2 {

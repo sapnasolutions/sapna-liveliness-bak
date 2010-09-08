@@ -2,16 +2,26 @@
   <div class="wait_for">
     
     <div class="navigation">
-      <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %><br />
-      <%= link_to "members", pivotal_tracker_project_members_path(project), :class => "members_list_link" %> &raquo; <%= member.name %>
+      <% if type == :pivotal_tracker %>
+        <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %><br />
+        <%= link_to "members", pivotal_tracker_project_members_path(project), :class => "members_list_link" %> &raquo; <%= member.name %>
+      <% else %>
+        <%= link_to "repositories", list_github_repositories_path, :class => "repositories_list_link" %> &raquo; <%= repository.name %><br />   
+        <%= link_to "collaborators", github_repository_collaborators_path(:repository_name => repository.name), :class => "collaborators_list_link" %> &raquo; <%= collaborator.name %>
+      <% end %>
     </div>
 
     <div class="message">
-      Please fill in your <%= type %> details!      
+      Please fill in your <%= (type == :github) ? "Pivotal Tracker" : "Github" %> details!      
     </div>
 
   </div>
   <%= indicator :size => :big, :class => "big_indicator", :message => "loading dates ..." %>
-  <%= indicator :size => :big, :class => "big_indicator_projects", :message => "loading projects ..." %>
-  <%= indicator :size => :big, :class => "big_indicator_members", :message => "loading members ..." %>
+  <% if type == :pivotal_tracker %>
+    <%= indicator :size => :big, :class => "big_indicator_projects", :message => "loading projects ..." %>
+    <%= indicator :size => :big, :class => "big_indicator_members", :message => "loading members ..." %>
+  <% else %>
+    <%= indicator :size => :big, :class => "big_indicator_repositories", :message => "loading repositories ..." %>
+    <%= indicator :size => :big, :class => "big_indicator_collaborators", :message => "loading collaborators ..." %>
+  <% end %>
 </div>

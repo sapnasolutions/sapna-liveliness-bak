@@ -13,8 +13,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :github do |github|
     github.resource :users, :only => [:login], :collection => { :login => :post }
+    github.resource :repositories, :only => [:list], :collection => { :list => :get }
     github.repository_collaborators 'repository/:repository_name/collaborators', :controller => "repositories",  :action => "collaborators" 
     github.collaborator_dates       'repository/:repository_name/collaborators/:collaborator_name/dates',  :controller => "collaborators",   :action => "dates" 
+    github.report                   'repository/:repository_name/collaborators/:collaborator_name/report', :controller => "reports",   :action => "generate" 
   end
   
   # The priority is based upon order of creation: first created -> highest priority.
