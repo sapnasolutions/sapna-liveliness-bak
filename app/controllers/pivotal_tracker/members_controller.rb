@@ -5,10 +5,10 @@ class PivotalTracker::MembersController < PivotalTracker::BaseController
 
   def dates
     raise NoTokenFoundException.new     unless session[:pivotal_tracker_token]
-    raise NoProjectsFoundException.new  unless @projects
-    raise NoProjectFoundException.new   unless @project
     raise NoProjectFoundException.new   unless params[:project_id]
     raise NoMemberFoundException.new    unless params[:member_id]
+    raise NoProjectsFoundException.new  unless @projects
+    raise NoProjectFoundException.new   unless @project
     raise NoMemberFoundException.new    unless @member
     render :partial => "/shared/dates", :locals => { :path => pivotal_tracker_report_path(@project, @member) }
   rescue NoTokenFoundException

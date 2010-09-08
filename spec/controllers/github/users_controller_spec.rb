@@ -9,10 +9,10 @@ describe Github::UsersController, "logging into github" do
     response.should include_text("no login information found")
   end
 
-  it "should return repositories with unexisting/wrong user (public repositories only)" do
+  it "should return error with unexisting/wrong user" do
     post :login, :github => { :login => "someuserthatdoesntexist", :password => "bar" }
-    response.should be_success
-    response.should render_template('github/_repositories.html.erb')
+    response.should_not be_success
+    response.should include_text("no repositories found")
   end
 
   it "should return repositories with correct user (public repositories only)" do

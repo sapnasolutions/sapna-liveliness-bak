@@ -5,12 +5,12 @@ class PivotalTracker::ReportsController < PivotalTracker::BaseController
 
   def generate  
     raise NoTokenFoundException.new         unless session[:pivotal_tracker_token]
-    raise NoProjectsFoundException.new      unless @projects
-    raise NoProjectFoundException.new       unless @project
     raise NoProjectFoundException.new       unless params[:project_id]
     raise NoMemberFoundException.new        unless params[:member_id]
-    raise NoMemberFoundException.new        unless @member
     raise NoDateIntervalFoundException.new  unless params[:date_interval]
+    raise NoProjectsFoundException.new      unless @projects
+    raise NoProjectFoundException.new       unless @project
+    raise NoMemberFoundException.new        unless @member
     
     start_date = Date.parse(params[:date_interval][:start_date])
     end_date = Date.parse(params[:date_interval][:end_date])

@@ -3,24 +3,32 @@ require 'octopussy'
 module Github
   class Repository
     
-    def self.all(login, password)
-      return [] if login.nil? or password.nil?
-      client = Octopussy::Client.new(:login => login, :password => password)
-      return [] unless client
-      return client.list_repos
-    rescue Octopussy::NotFound
-      return []
-    rescue Octopussy::Unauthorized
-      return []
+    attr_reader :client
+    attr_reader :login, :password
+    attr_reader :name
+    
+    def initialize(client, login, password, name)
+      @client = client
+      @login  = login; @password = password
+      @name   = name
     end
     
-    def collaborators(login, password, repository_name)
-      return [] if login.nil? or password.nil? or repository_name.nil?
+    def self.all(login, password)
+      return [] unless login and password
+      
       client = Octopussy::Client.new(:login => login, :password => password)
       return [] unless client
-      return client.collaborators(repository_name)
-    rescue Octopussy::Unauthorized
-      return []
+      
+      return client.list_repos.map { |hash|
+        Github::Repository.new(client, login, password, hash.name)
+      }
+    end
+    
+    def collaborators
+      return [] unless @client and @login and @password
+      self.client.collaborators({:username => @login, :name => @name}).map { |hash|
+        Github::Collaborator.new(self, hash)
+      }
     end
     
   end

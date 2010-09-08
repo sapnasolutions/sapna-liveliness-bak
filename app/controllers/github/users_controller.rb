@@ -8,6 +8,8 @@ class Github::UsersController < Github::BaseController
     render :partial => "github/repositories", :locals => { :repositories => load_repositories(params[:github]) }, :layout => false
   rescue NoLoginFoundException
     render_json_error("please login again", "no login information found")
+  rescue Octopussy::NotFound
+    render_json_error("please login again", "no repositories found")
   end
   
 end

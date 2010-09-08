@@ -11,7 +11,10 @@ describe Github::RepositoriesController, "selecting a repository from github" do
   end
   
   it "should return error: no repository_name" do
-    # TODO
+    session[:github_credentials] = { :login => "riencroonenborghs", :password => "r13ncr00n3nb0rghs" }
+    post :collaborators, :repository_name => ""
+    response.should_not be_success
+    response.should include_text("no repository found")
   end
 
   it "should return error: wrong repository_name" do
