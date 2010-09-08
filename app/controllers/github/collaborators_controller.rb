@@ -21,7 +21,7 @@ class Github::CollaboratorsController < Github::BaseController
         :collaborator => @collaborator
       }
     else
-      render :partial => "/shared/wait_for", :locals => { :type => :github, :repository => @repository, :collaborator => @collaborator }
+      render :partial => "/github/wait_for", :locals => { :repository => @repository, :collaborator => @collaborator }
     end
   rescue NoCredentialsFoundException
     render_json_error("please login again", "no credentials found")

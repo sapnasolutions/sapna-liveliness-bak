@@ -1,0 +1,4 @@
+<% pivotal_tracker_wait_for_wrapper do %>
+  <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %><br />
+  <%= link_to "members", pivotal_tracker_project_members_path(project), :class => "members_list_link" %> &raquo; <%= member.name %>
+<% end %>

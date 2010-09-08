@@ -1,14 +1,7 @@
-<div class="projects_wrapper">  
-  <div class="projects">
-    <h2>Your projects</h2>
-    <ul>
-    <% projects.each do |project| %>
-      <li class="project">
-        <%= link_to project.name, pivotal_tracker_project_members_path(project), :class => "project_link" %>
-      </li>
-    <% end %>
-    </ul>
-    Click on one of the projects to see its members...
-  </div>
-  <%= indicator :size => :big, :class => "big_indicator", :message => "loading members ..." %><br />
-</div>
+<% projects_wrapper do %>
+  <% projects.each do |project| %>
+    <li class="project">
+      <%= link_to project.name, pivotal_tracker_project_members_path(project), :class => "project_link" %>
+    </li>
+  <% end %>
+<% end %>

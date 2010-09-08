@@ -1,0 +1,4 @@
+<% github_wait_for_wrapper do %>
+  <%= link_to "repositories", list_github_repositories_path, :class => "repositories_list_link" %> &raquo; <%= repository.name %><br />   
+  <%= link_to "collaborators", github_repository_collaborators_path(:repository_name => repository.name), :class => "collaborators_list_link" %> &raquo; <%= collaborator.name %>
+<% end %>

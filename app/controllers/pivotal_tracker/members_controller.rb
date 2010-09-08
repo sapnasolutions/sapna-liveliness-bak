@@ -21,7 +21,7 @@ class PivotalTracker::MembersController < PivotalTracker::BaseController
         :member => @member 
       }
     else
-      render :partial => "/shared/wait_for", :locals => { :type => :pivotal_tracker, :project => @project, :member => @member }
+      render :partial => "/pivotal_tracker/wait_for", :locals => { :project => @project, :member => @member }
     end
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")

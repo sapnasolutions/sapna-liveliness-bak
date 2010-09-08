@@ -1,20 +1,14 @@
-<div class="members_wrapper"> 
-  <div class="members">
-    
-    <div class="navigation">
-      <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %>      
-    </div>
-
-    <h2>Project '<%=h project.name %>': the members</h2>
-    <ul>
-    <% members.each do |member| %>
-      <li class="member">
-        <%= link_to member.name, pivotal_tracker_member_dates_path(project, member), :class => "member_link" %>
-      </li>
-    <% end %>
-    </ul>
-    Click on one of the project's members to continue...
+<% members_wrapper do %>
+  <div class="navigation">
+    <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %>      
   </div>
-  <%= indicator :size => :big, :class => "big_indicator", :message => "loading dates ..." %>
-  <%= indicator :size => :big, :class => "big_indicator_projects", :message => "loading projects ..." %>
-</div>
+
+  <h2>Project '<%=h project.name %>': the members</h2>
+  <ul>
+  <% members.each do |member| %>
+    <li class="member">
+      <%= link_to member.name, pivotal_tracker_member_dates_path(project, member), :class => "member_link" %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>

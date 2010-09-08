@@ -1,20 +1,14 @@
-<div class="collaborators_wrapper">  
-  <div class="collaborators">
-    
-    <div class="navigation">
-      <%= link_to "repositories", list_github_repositories_path, :class => "repositories_list_link" %> &raquo; <%= repository.name %>      
-    </div>
-    
-    <h2>Repository '<%=h repository.name %>': the collaborators</h2>
-    <ul>
-    <% collaborators.each do |collaborator| %>
-      <li class="collaborator">
-        <%= link_to collaborator.name, github_collaborator_dates_path(:repository_name => repository.name, :collaborator_name => collaborator.name), :class => "collaborator_link" %>
-      </li>
-    <% end %>
-    </ul>
-    Click on one of the repository's collaborators to continue...
+<% collaborators_wrapper do %>
+  <div class="navigation">
+    <%= link_to "repositories", list_github_repositories_path, :class => "repositories_list_link" %> &raquo; <%= repository.name %>      
   </div>
-  <%= indicator :size => :big, :class => "big_indicator", :message => "loading dates ..." %><br />
-  <%= indicator :size => :big, :class => "big_indicator_repositories", :message => "loading repositories ..." %>
-</div>
+
+  <h2>Repository '<%=h repository.name %>': the collaborators</h2>
+  <ul>
+  <% collaborators.each do |collaborator| %>
+    <li class="collaborator">
+      <%= link_to collaborator.name, github_collaborator_dates_path(:repository_name => repository.name, :collaborator_name => collaborator.name), :class => "collaborator_link" %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>
