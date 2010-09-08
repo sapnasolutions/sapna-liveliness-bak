@@ -20,7 +20,12 @@ class ApplicationController < ActionController::Base
   class NoCredentialsFoundException   < Exception; end
   
   def login
-    session[:pivotal_tracker_token] = nil
+    session[:pivotal_tracker_token]       = nil
+    session[:pivotal_tracker_project_id]  = nil
+    session[:pivotal_tracker_member_id]   = nil
+    session[:github_credentials]          = nil
+    session[:github_repository_id]        = nil
+    session[:github_collaborator_id]      = nil
   end
   
   private
@@ -32,5 +37,12 @@ class ApplicationController < ActionController::Base
     }, :status => 400, :layout => false
   end
   
+  def has_all_pivotal_tracker_info?
+    return !session[:pivotal_tracker_token].nil? && !session[:pivotal_tracker_project_id].nil? && !session[:pivotal_tracker_member_id].nil?
+  end
+  
+  def has_all_github_info?
+    return !session[:github_credentials].nil?    && !session[:github_repository_id].nil?       && !session[:github_collaborator_id].nil?
+  end
   
 end

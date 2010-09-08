@@ -7,6 +7,10 @@ class Github::RepositoriesController < Github::BaseController
     raise NoRepositoryFoundException.new    unless params[:repository_name]
     raise NoRepositoriesFoundException.new  unless @repositories
     raise NoRepositoryFoundException.new    unless @repository
+    
+    session[:github_repository_name] = @repository.name
+    session[:github_collaborator_name] = nil
+    
     render :partial => '/github/collaborators', :locals => { :repository => @repository, :collaborators => load_collaborators(@repository) }
   rescue NoCredentialsFoundException
     render_json_error("please login again", "no credentials found")

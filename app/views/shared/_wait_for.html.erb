@@ -1,0 +1,17 @@
+<div class="wait_for_wrapper"> 
+  <div class="wait_for">
+    
+    <div class="navigation">
+      <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %><br />
+      <%= link_to "members", pivotal_tracker_project_members_path(project), :class => "members_list_link" %> &raquo; <%= member.name %>
+    </div>
+
+    <div class="message">
+      Please fill in your <%= type %> details!      
+    </div>
+
+  </div>
+  <%= indicator :size => :big, :class => "big_indicator", :message => "loading dates ..." %>
+  <%= indicator :size => :big, :class => "big_indicator_projects", :message => "loading projects ..." %>
+  <%= indicator :size => :big, :class => "big_indicator_members", :message => "loading members ..." %>
+</div>

@@ -4,6 +4,10 @@ class PivotalTracker::ProjectsController < PivotalTracker::BaseController
 
   def list
     raise NoTokenFoundException.new unless (token = session[:pivotal_tracker_token])
+    
+    session[:pivotal_tracker_project_id] = nil
+    session[:pivotal_tracker_member_id] = nil
+    
     render :partial => "pivotal_tracker/projects", :locals => { :projects => load_projects(token) }, :layout => false
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")
@@ -14,6 +18,10 @@ class PivotalTracker::ProjectsController < PivotalTracker::BaseController
     raise NoProjectFoundException.new   unless params[:project_id]
     raise NoProjectsFoundException.new  unless @projects
     raise NoProjectFoundException.new   unless @project
+    
+    session[:pivotal_tracker_project_id] = @project.id
+    session[:pivotal_tracker_member_id] = nil
+    
     render :partial => '/pivotal_tracker/members', :locals => { :project => @project, :members => @project.memberships }
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")

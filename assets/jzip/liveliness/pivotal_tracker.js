@@ -51,36 +51,46 @@ $('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live
 });
 
 // ========== GO BACK: PROJECTS ==========
-$('.members_wrapper .navigation a.projects_list_link').live('click', function(event){
-  var url = $(this).attr('href');
-  var list = $(this).closest('.members');
-  var wrapper = $(this).closest('.members_wrapper');
+function go_back_on_projects(elt, prefix) {
+  var url = elt.attr('href');
+  var list = elt.closest('.' + prefix);
+  var wrapper = elt.closest('.'+prefix+'_wrapper');
   var indicator = wrapper.find('.big_indicator_projects');
 
   base_ajax_get(url, list, indicator, wrapper);
-  
+}
+
+$('.members_wrapper .navigation a.projects_list_link').live('click', function(event){
+  go_back_on_projects($(this), 'members');
   event.preventDefault();
 });
 
 $('.dates_wrapper .navigation a.projects_list_link').live('click', function(event){
-  var url = $(this).attr('href');
-  var list = $(this).closest('.dates');
-  var wrapper = $(this).closest('.dates_wrapper');
-  var indicator = wrapper.find('.big_indicator_projects');
+  go_back_on_projects($(this), 'dates');
+  event.preventDefault();
+});
 
-  base_ajax_get(url, list, indicator, wrapper);
-  
+$('.wait_for_wrapper .navigation a.projects_list_link').live('click', function(event){
+  go_back_on_projects($(this), 'wait_for');
   event.preventDefault();
 });
 
 // ========== GO BACK: MEMBERS ==========
-$('.dates_wrapper .navigation a.members_list_link').live('click', function(event){
-  var url = $(this).attr('href');
-  var list = $(this).closest('.dates');
-  var wrapper = $(this).closest('.dates_wrapper');
+function go_back_on_members(elt, prefix) {
+  var url = elt.attr('href');
+  var list = elt.closest('.' + prefix);
+  var wrapper = elt.closest('.'+prefix+'_wrapper');
   var indicator = wrapper.find('.big_indicator_members');
 
   base_ajax_get(url, list, indicator, wrapper);
-  
+}
+
+$('.dates_wrapper .navigation a.members_list_link').live('click', function(event){
+  go_back_on_members($(this), 'dates');
+  event.preventDefault();
+});
+
+$('.wait_for_wrapper .navigation a.members_list_link').live('click', function(event){
+  go_back_on_members($(this), 'wait_for');
   event.preventDefault();
 });
