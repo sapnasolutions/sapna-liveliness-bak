@@ -8,9 +8,29 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
+  class NoLoginFoundException         < Exception; end
+  class NoTokenFoundException         < Exception; end
+  class NoProjectsFoundException      < Exception; end
+  class NoProjectFoundException       < Exception; end
+  class NoMemberFoundException        < Exception; end  
+  class NoDateIntervalFoundException  < Exception; end
+  class StartBeforeEndException       < Exception; end
+  class NoRepositoriesFoundException  < Exception; end
+  class NoRepositoryFoundException    < Exception; end
+  class NoCredentialsFoundException   < Exception; end
   
   def login
     session[:pivotal_tracker_token] = nil
   end
+  
+  private
+  
+  def render_json_error(form, message)
+    render :json => {
+      :form => form,
+      :error_message => message
+    }, :status => 400, :layout => false
+  end
+  
   
 end

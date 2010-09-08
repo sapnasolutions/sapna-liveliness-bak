@@ -10,6 +10,8 @@ module Github
       return client.list_repos
     rescue Octopussy::NotFound
       return []
+    rescue Octopussy::Unauthorized
+      return []
     end
     
     def collaborators(login, password, repository_name)
@@ -17,8 +19,8 @@ module Github
       client = Octopussy::Client.new(:login => login, :password => password)
       return [] unless client
       return client.collaborators(repository_name)
-      rescue Octopussy::Unauthorized
-        return []
+    rescue Octopussy::Unauthorized
+      return []
     end
     
   end

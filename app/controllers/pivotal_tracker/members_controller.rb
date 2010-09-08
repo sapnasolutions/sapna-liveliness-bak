@@ -10,7 +10,7 @@ class PivotalTracker::MembersController < PivotalTracker::BaseController
     raise NoProjectFoundException.new   unless params[:project_id]
     raise NoMemberFoundException.new    unless params[:member_id]
     raise NoMemberFoundException.new    unless @member
-    render :partial => "/shared/dates"
+    render :partial => "/shared/dates", :locals => { :path => pivotal_tracker_report_path(@project, @member) }
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")
   rescue NoProjectsFoundException

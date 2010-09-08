@@ -2,12 +2,6 @@ require 'pivotal_tracker/project'
 
 class PivotalTracker::BaseController < ApplicationController
 
-  class NoLoginFoundException     < Exception; end
-  class NoTokenFoundException     < Exception; end
-  class NoProjectsFoundException  < Exception; end
-  class NoProjectFoundException   < Exception; end
-  class NoMemberFoundException    < Exception; end
-  
   private
   
   def load_project
@@ -23,11 +17,4 @@ class PivotalTracker::BaseController < ApplicationController
     end
   end
   
-  def render_json_error(form, message)
-    render :json => {
-      :form => form,
-      :error_message => message
-    }, :status => 400, :layout => false
-  end
-
 end

@@ -2482,15 +2482,42 @@ $('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member
   event.preventDefault();
 });
 
-function init_date_picker(class) {
+function init_date_picker(class, hidden_input_field) {
   $(function() {
+    Date.format = 'yyyy/mm/dd';
+    var hiddenInput = $(hidden_input_field);        
   	$(class)
-  		.datePicker({inline:true})
+  		.datePicker({
+  		  inline:true,
+  		  startDate:'1996-01-01'
+  		})
   		.bind('dateSelected', function(e, selectedDate, $td) {
-  				console.log('You selected ' + selectedDate);
+  				hiddenInput.val(selectedDate.asString());          
   			});
   });
 }
+
+$('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live('submit', function(event){
+  var form = $(this);
+  var url = form.attr('action');
+  var list = form.closest('.dates');
+  var indicator = form.closest('.dates_wrapper').find('.big_indicator');
+  var wrapper = form.closest('.pivotal_tracker_wrapper');  
+  
+  $.ajax({
+    url: url,
+    type: 'POST',
+    beforeSend: function() { list.hide(); indicator.show(); },
+    complete: function() { list.show(); indicator.hide(); },
+    success: function(s) { wrapper.html(s); },
+    error: function(e) { 
+      json = JSON.parse(e.responseText);
+      wrapper.html(json.form);
+      show_error_message(json.error_message);
+    }
+  });
+  event.preventDefault();
+});
 
 $('.application.login .github_wrapper form').live('submit', function(event){
   var form = $(this);

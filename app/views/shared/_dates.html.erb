@@ -2,10 +2,10 @@
   <div class="dates">
     <h2>Generate a report between:</h2>
     
-    <% semantic_form_for :date_interval do |form| %>    
+    <% semantic_form_for :date_interval, :url => path do |form| %>    
       <% form.inputs do %>
-        <%= form.input :start_date, :as => :hidden %>
-        <%= form.input :end_date, :as => :hidden %>
+        <%= form.input :start_date, :as => :hidden, :value => Time.now.strftime("%Y/%m/%d") %>
+        <%= form.input :end_date, :as => :hidden, :value => Time.now.strftime("%Y/%m/%d") %>
         <div class="start_date_wrapper left">      
           Start date:
           <div class="start_date"></div>
@@ -22,9 +22,10 @@
     <% end %>
     
   </div>
+  <%= indicator :size => :big, :class => "big_indicator", :message => "generating report ..." %><br />
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  init_date_picker('.start_date');
-  init_date_picker('.end_date');
+  init_date_picker('.start_date', '#date_interval_start_date');
+  init_date_picker('.end_date', '#date_interval_end_date');
 </script>

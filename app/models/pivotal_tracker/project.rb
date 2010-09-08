@@ -15,6 +15,11 @@ module PivotalTracker
     def memberships
       base_find(PivotalTracker::Membership, :all)
     end
+    
+    def activities(occurred_since_date = Time.now)
+      options = {:project_id => self.id, :limit => 100, :occurred_since_date => occurred_since_date}
+      base_find(PivotalTracker::Activity, :all, options)
+    end
 
   private
     def params
@@ -25,6 +30,6 @@ module PivotalTracker
       items.map{ |x| x.project_id = self.id }
       return items
     end
-  
+      
   end
 end

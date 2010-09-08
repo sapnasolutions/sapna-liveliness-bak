@@ -5,16 +5,15 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :pivotal_tracker do |pivotal_tracker|
     pivotal_tracker.resource :users, :only => [:login], :collection => { :login => :post }
-    pivotal_tracker.project_members 'projects/:project_id/members', :controller => "projects", :action => "members" 
-    pivotal_tracker.member_dates 'projects/:project_id/members/:member_id/dates', :controller => "members", :action => "dates" 
+    pivotal_tracker.project_members 'projects/:project_id/members',                   :controller => "projects",  :action => "members" 
+    pivotal_tracker.member_dates    'projects/:project_id/members/:member_id/dates',  :controller => "members",   :action => "dates" 
+    pivotal_tracker.report          'projects/:project_id/members/:member_id/report', :controller => "reports",   :action => "generate" 
   end
 
-  # map.namespace :github do |github|
-  #   github.resource :users, :only => [:repositories], :collection => { :repositories => :post }
-  #   github.namespace :repository do |repository|
-  #     repository.members ':repository_name/members', :controller => "repositories", :action => "members"
-  #   end  
-  # end  
+  map.namespace :github do |github|
+    github.resource :users, :only => [:login], :collection => { :login => :post }
+    github.repository_collaborators 'repository/:repository_name/collaborators', :controller => "repositories",  :action => "collaborators" 
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
 

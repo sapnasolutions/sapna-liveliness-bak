@@ -1,7 +1,13 @@
 require 'pivotal_tracker'
+require 'uri'
 
 module PivotalTracker
   class NoTokenException < Exception; end
+  
+  def self.date_to_param(date)
+    # URI.escape(date.strftime("%Y/%m/%d 00:00:00 UTC"))
+    return date
+  end  
   
   class Base < ActiveResource::Base
     include PivotalTracker
