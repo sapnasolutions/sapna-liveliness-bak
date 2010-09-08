@@ -46,7 +46,7 @@ describe PivotalTracker::MembersController, "selecting a date" do
     session[:pivotal_tracker_token] = "8d2f5e20b85eb9ac46352a7fa67cc61f"
     post :dates, :project_id => "114774", :member_id => "367423"
     response.should be_success
-    response.should render_template('shared/_wait_for.html.erb')
+    response.should render_template('pivotal_tracker/_wait_for.html.erb')
   end
   
 
