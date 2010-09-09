@@ -10,6 +10,13 @@ module PivotalTracker
       
       find(:all)
     end
+    
+    def self.find_for_id(token, id)
+      raise NoTokenException.new unless token
+      headers['X-TrackerToken'] = token
+      
+      find(id)
+    end
 
     # we don't need to set the token here since it's been set at the Project.all level (see Base class)
     def memberships

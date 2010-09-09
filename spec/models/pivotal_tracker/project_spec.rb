@@ -26,4 +26,15 @@ describe PivotalTracker::Project do
     projects.size.should >= 1
   end
   
+  it "should not find single project without token" do
+    lambda {
+      PivotalTracker::Project.find_for_id(nil, PIVOTAL_TRACKER_PROJECT_ID)
+    }.should raise_error(PivotalTracker::NoTokenException)
+  end
+  
+  it "should find single project with token" do
+    project = PivotalTracker::Project.find_for_id(PIVOTAL_TRACKER_TOKEN, PIVOTAL_TRACKER_PROJECT_ID)
+    project.should_not be_nil
+  end
+  
 end
