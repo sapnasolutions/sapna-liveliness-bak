@@ -16,13 +16,13 @@ describe PivotalTracker::UsersController, "logging into pivotal tracker" do
   end
 
   it "should return error when login failed: wrong password" do
-    post :login, :pivotal_tracker => { :login => "rien@sapnasolutions.com", :password => "thatissowronglike" }
+    post :login, :pivotal_tracker => { :login => PIVOTAL_TRACKER_LOGIN, :password => "thatissowronglike" }
     response.should_not be_success
     response.should include_text("no token found")
   end
 
   it "should return projects when login successful" do
-    post :login, :pivotal_tracker => { :login => "rien@sapnasolutions.com", :password => "s4pn4s0lut10ns" }
+    post :login, :pivotal_tracker => { :login => PIVOTAL_TRACKER_LOGIN, :password => PIVOTAL_TRACKER_PASSWORD }
     response.should be_success
     response.should render_template('pivotal_tracker/_projects.html.erb')
   end

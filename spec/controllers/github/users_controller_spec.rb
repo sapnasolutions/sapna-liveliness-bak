@@ -22,7 +22,7 @@ describe Github::UsersController, "logging into github" do
   end
 
   it "should return repositories with correct user (public repositories only)" do
-    post :login, :github => { :login => "riencroonenborghs", :password => "r13ncr00n3nb0rghs" }
+    post :login, :github => { :login => GITHUB_LOGIN, :password => GITHUB_PASSWORD }
     response.should be_success
     response.should render_template('github/_repositories.html.erb')
   end

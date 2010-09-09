@@ -5,7 +5,7 @@ describe PivotalTracker::ProjectsController, "selecting a project from pivotal t
   
   it "should return error: token not found" do
     session[:pivotal_tracker_token] = nil
-    post :members, :project_id => "114774"
+    post :members, :project_id => PIVOTAL_TRACKER_PROJECT_ID
     response.should_not be_success
     response.should include_text("no token found")
   end
@@ -15,15 +15,15 @@ describe PivotalTracker::ProjectsController, "selecting a project from pivotal t
   end
 
   it "should return error: wrong project_id" do
-    session[:pivotal_tracker_token] = "8d2f5e20b85eb9ac46352a7fa67cc61f"
+    session[:pivotal_tracker_token] = PIVOTAL_TRACKER_TOKEN
     post :members, :project_id => "foo"
     response.should_not be_success
     response.should include_text("no project found")
   end
 
   it "should return the members of a selected project" do
-    session[:pivotal_tracker_token] = "8d2f5e20b85eb9ac46352a7fa67cc61f"
-    post :members, :project_id => "114774"
+    session[:pivotal_tracker_token] = PIVOTAL_TRACKER_TOKEN
+    post :members, :project_id => PIVOTAL_TRACKER_PROJECT_ID
     response.should be_success
     response.should render_template('pivotal_tracker/_members.html.erb')
   end

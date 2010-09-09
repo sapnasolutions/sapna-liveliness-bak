@@ -11,7 +11,7 @@ describe PivotalTracker::Project do
 
   it "should find all projects with token" do
     projects = PivotalTracker::Project.all(
-      PivotalTracker::Token.get_token('rien@sapnasolutions.com', 's4pn4s0lut10ns')
+      PivotalTracker::Token.get_token(PIVOTAL_TRACKER_LOGIN, PIVOTAL_TRACKER_PASSWORD)
     )
     projects.should_not eql([])
     projects.size.should >= 1
@@ -19,7 +19,7 @@ describe PivotalTracker::Project do
   
   it "should find memerships for project" do
     projects = PivotalTracker::Project.all(
-      PivotalTracker::Token.get_token('rien@sapnasolutions.com', 's4pn4s0lut10ns')
+      PivotalTracker::Token.get_token(PIVOTAL_TRACKER_LOGIN, PIVOTAL_TRACKER_PASSWORD)
     )
     memberships = projects.first.memberships
     projects.should_not eql([])

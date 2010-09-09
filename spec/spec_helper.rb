@@ -52,3 +52,16 @@ Spec::Runner.configure do |config|
   #
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
 end
+
+PIVOTAL_TRACKER_LOGIN       = "rien@sapnasolutions.com"
+PIVOTAL_TRACKER_PASSWORD    = "s4pn4s0lut10ns"
+PIVOTAL_TRACKER_TOKEN       = "8d2f5e20b85eb9ac46352a7fa67cc61f"
+PIVOTAL_TRACKER_PROJECT_ID  = "114774"
+PIVOTAL_TRACKER_MEMBER_ID   = "367423"
+
+GITHUB_LOGIN            = "riencroonenborghs"
+GITHUB_PASSWORD         = "r13ncr00n3nb0rghs"  
+GITHUB_WRONG_LOGIN      = "somemadeupusernamethatdoesnotexist"
+GITHUB_WRONG_PASSWORD   = "foo"
+GITHUB_REPOSITORY_NAME  = "foo-bar-1"
+

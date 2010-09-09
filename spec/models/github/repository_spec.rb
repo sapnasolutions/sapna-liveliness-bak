@@ -3,39 +3,33 @@ require 'github/repository'
 
 describe Github::Repository do
   
-  LOGIN = "riencroonenborghs"
-  PASSWORD = "r13ncr00n3nb0rghs"  
-  WRONG_LOGIN = "somemadeupusernamethatdoesnotexist"
-  WRONG_PASSWORD = "foo"
-  REPOSITORY_NAME = "foo-bar-1"
-  
   def create_client
-    Octopussy::Client.new(:login => LOGIN, :password => PASSWORD)
+    Octopussy::Client.new(:login => GITHUB_LOGIN, :password => GITHUB_PASSWORD)
   end
   
   it "should not find repositories without login" do
-    repositories = Github::Repository.all(nil, PASSWORD)
+    repositories = Github::Repository.all(nil, GITHUB_PASSWORD)
     repositories.should be_empty
   end
   
   it "should not find repositories without password" do
-    repositories = Github::Repository.all(LOGIN, nil)
+    repositories = Github::Repository.all(GITHUB_LOGIN, nil)
     repositories.should be_empty
   end
   
   it "should not find repositories with wrong login" do
     lambda {
-      Github::Repository.all(WRONG_LOGIN, WRONG_PASSWORD)
+      Github::Repository.all(GITHUB_WRONG_LOGIN, GITHUB_WRONG_PASSWORD)
     }.should raise_error(Octopussy::NotFound)
   end
   
   it "should find repositories" do
-    repositories = Github::Repository.all(LOGIN, PASSWORD)
+    repositories = Github::Repository.all(GITHUB_LOGIN, GITHUB_PASSWORD)
     repositories.should_not be_empty
   end
   
   it "should find names in repositories" do
-    Github::Repository.all(LOGIN, PASSWORD).each do |repository|
+    Github::Repository.all(GITHUB_LOGIN, GITHUB_PASSWORD).each do |repository|
       repository.name.should_not be_empty
     end    
   end
@@ -43,28 +37,28 @@ describe Github::Repository do
   
   
   it "should not find collaborators without client" do
-    collaborators = Github::Repository.new(nil, LOGIN, PASSWORD, REPOSITORY_NAME).collaborators
+    collaborators = Github::Repository.new(nil, GITHUB_LOGIN, GITHUB_PASSWORD, GITHUB_REPOSITORY_NAME).collaborators
     collaborators.should be_empty
   end
 
   it "should not find collaborators without login" do    
-    collaborators = Github::Repository.new(create_client, nil, PASSWORD, REPOSITORY_NAME).collaborators
+    collaborators = Github::Repository.new(create_client, nil, GITHUB_PASSWORD, GITHUB_REPOSITORY_NAME).collaborators
     collaborators.should be_empty
   end
 
   it "should not find collaborators without password" do    
-    collaborators = Github::Repository.new(create_client, LOGIN, nil, REPOSITORY_NAME).collaborators
+    collaborators = Github::Repository.new(create_client, GITHUB_LOGIN, nil, GITHUB_REPOSITORY_NAME).collaborators
     collaborators.should be_empty
   end
 
   it "should find collaborators" do
-    collaborators = Github::Repository.new(create_client, LOGIN, PASSWORD, REPOSITORY_NAME).collaborators
+    collaborators = Github::Repository.new(create_client, GITHUB_LOGIN, GITHUB_PASSWORD, GITHUB_REPOSITORY_NAME).collaborators
     collaborators.should_not be_empty
   end
 
   it "should find collaborators and myself in the list" do
-    collaborators = Github::Repository.new(create_client, LOGIN, PASSWORD, REPOSITORY_NAME).collaborators
-    collaborators.select{|x| x.name == LOGIN}.first.name.should eql(LOGIN)
+    collaborators = Github::Repository.new(create_client, GITHUB_LOGIN, GITHUB_PASSWORD, GITHUB_REPOSITORY_NAME).collaborators
+    collaborators.select{|x| x.name == GITHUB_LOGIN}.first.name.should eql(GITHUB_LOGIN)
   end
     
 end

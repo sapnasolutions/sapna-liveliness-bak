@@ -8,13 +8,13 @@ describe PivotalTracker::Token do
   end
 
   it "should not find token: wrong password" do
-    PivotalTracker::Token.get_token('rien@sapnasolutions.com', 'bar').should be_nil    
+    PivotalTracker::Token.get_token(PIVOTAL_TRACKER_LOGIN, 'bar').should be_nil    
   end
 
   it "should find token" do
-    token = PivotalTracker::Token.get_token('rien@sapnasolutions.com', 's4pn4s0lut10ns')
+    token = PivotalTracker::Token.get_token(PIVOTAL_TRACKER_LOGIN, PIVOTAL_TRACKER_PASSWORD)
     token.should_not be_nil
-    token.should eql("8d2f5e20b85eb9ac46352a7fa67cc61f")
+    token.should eql(PIVOTAL_TRACKER_TOKEN)
   end
     
 end
