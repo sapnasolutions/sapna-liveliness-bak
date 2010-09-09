@@ -39,18 +39,10 @@ class ApplicationController < ActionController::Base
   end
   
   def has_all_pivotal_tracker_info?
-# puts "====+>>>> PT session[:pivotal_tracker_token]      = #{session[:pivotal_tracker_token]}"
-# puts "====+>>>> PT session[:pivotal_tracker_project_id] = #{session[:pivotal_tracker_project_id]}"
-# puts "====+>>>> PT session[:pivotal_tracker_member_id]  = #{session[:pivotal_tracker_member_id]}"    
-# puts "====+>>>> PT                                      => #{!session[:pivotal_tracker_token].nil? && !session[:pivotal_tracker_project_id].nil? && !session[:pivotal_tracker_member_id].nil?}"    
     return !session[:pivotal_tracker_token].nil? && !session[:pivotal_tracker_project_id].nil? && !session[:pivotal_tracker_member_id].nil?
   end
   
   def has_all_github_info?
-# puts "====+>>>> GH session[:github_credentials]       = #{session[:github_credentials]}"    
-# puts "====+>>>> GH session[:github_repository_name]   = #{session[:github_repository_name]}"    
-# puts "====+>>>> GH session[:github_collaborator_name] = #{session[:github_collaborator_name]}"    
-# puts "====+>>>> GH                                    = #{!session[:github_credentials].nil?    && !session[:github_repository_name].nil?       && !session[:github_collaborator_name].nil?}"    
     return !session[:github_credentials].nil?    && !session[:github_repository_name].nil?       && !session[:github_collaborator_name].nil?
   end
   
