@@ -15,13 +15,9 @@ class Github::CollaboratorsController < Github::BaseController
     session[:github_collaborator_name]  = @collaborator.name
     
     if has_all_pivotal_tracker_info? && has_all_github_info?
-      render :partial => "/shared/dates", :locals => { 
-        :path => github_report_path(@repository, @collaborator), 
-        :repository => @repository, 
-        :collaborator => @collaborator
-      }
+      render :partial => "/shared/dates"
     else
-      render :partial => "/github/wait_for", :locals => { :repository => @repository, :collaborator => @collaborator }
+      render :partial => "/github/wait_for", :locals => { :repository => @repository, :collaborator => @collaborator }, :status => 400
     end
   rescue NoCredentialsFoundException
     render_json_error("please login again", "no credentials found")

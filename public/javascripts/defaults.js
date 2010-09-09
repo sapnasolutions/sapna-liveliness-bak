@@ -2462,6 +2462,17 @@ function init_date_picker(class, hidden_input_field) {
   });
 }
 
+function show_date_interval(url, list, indicator, wrapper) {
+  $.ajax({
+    url: url,
+    type: 'POST',
+    beforeSend: function() { list.hide(); indicator.show(); },
+    complete: function() { list.show(); indicator.hide(); },
+    error: function(e) { wrapper.html(e.responseText); },
+    success: function(s) { $('body').find('.wrapper').slideUp(); $('body').find('#date_interval').html(s); }
+  });
+}
+
 function show_message(type, message) {
   $('.messages.'+type).html(message);
   $('.messages.'+type).addClass('padding');
@@ -2508,23 +2519,23 @@ $('.application.login .pivotal_tracker_wrapper .members_wrapper .member a.member
   var indicator = a.closest('.members_wrapper').find('.big_indicator');
   var wrapper = a.closest('.pivotal_tracker_wrapper');  
   
-  base_ajax_post(url, list, indicator, wrapper);
+  show_date_interval(url, list, indicator, wrapper);
 
   event.preventDefault();
 });
 
-// ========== DATES ==========
-$('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live('submit', function(event){
-  var form = $(this);
-  var url = form.attr('action');
-  var list = form.closest('.dates');
-  var indicator = form.closest('.dates_wrapper').find('.big_indicator');
-  var wrapper = form.closest('.pivotal_tracker_wrapper');  
-  
-  base_ajax_post(url, list, indicator, wrapper);
-
-  event.preventDefault();
-});
+// // ========== DATES ==========
+// $('.application.login .pivotal_tracker_wrapper .dates_wrapper .dates form').live('submit', function(event){
+//   var form = $(this);
+//   var url = form.attr('action');
+//   var list = form.closest('.dates');
+//   var indicator = form.closest('.dates_wrapper').find('.big_indicator');
+//   var wrapper = form.closest('.pivotal_tracker_wrapper');  
+//   
+//   base_ajax_post(url, list, indicator, wrapper);
+// 
+//   event.preventDefault();
+// });
 
 // ========== GO BACK: PROJECTS ==========
 function go_back_on_projects(elt, prefix) {
@@ -2605,23 +2616,23 @@ $('.application.login .github_wrapper .collaborators_wrapper .collaborator a.col
   var indicator = a.closest('.collaborators_wrapper').find('.big_indicator');
   var wrapper = a.closest('.github_wrapper');  
   
-  base_ajax_post(url, list, indicator, wrapper);
+  show_date_interval(url, list, indicator, wrapper);
 
   event.preventDefault();
 });
 
-// ========== DATES ==========
-$('.application.login .github_wrapper .dates_wrapper .dates form').live('submit', function(event){
-  var form = $(this);
-  var url = form.attr('action');
-  var list = form.closest('.dates');
-  var indicator = form.closest('.dates_wrapper').find('.big_indicator');
-  var wrapper = form.closest('.github_wrapper');  
-  
-  base_ajax_post(url, list, indicator, wrapper);
-
-  event.preventDefault();
-});
+// // ========== DATES ==========
+// $('.application.login .github_wrapper .dates_wrapper .dates form').live('submit', function(event){
+//   var form = $(this);
+//   var url = form.attr('action');
+//   var list = form.closest('.dates');
+//   var indicator = form.closest('.dates_wrapper').find('.big_indicator');
+//   var wrapper = form.closest('.github_wrapper');  
+//   
+//   base_ajax_post(url, list, indicator, wrapper);
+// 
+//   event.preventDefault();
+// });
 
 // ========== GO BACK: REPOSITORIES ==========
 function go_back_on_repositories(elt, prefix) {

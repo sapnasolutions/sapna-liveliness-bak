@@ -47,7 +47,7 @@ describe Github::CollaboratorsController, "selecting a date" do
     session[:github_credentials] = { :login => GITHUB_LOGIN, :password => GITHUB_PASSWORD }
     post :dates, :repository_name => GITHUB_REPOSITORY_NAME, :collaborator_name => GITHUB_COLLABORATOR_NAME
     response.should be_success
-    response.should render_template('pivotal_tracker/_wait_for.html.erb')
+    response.should render_template('github/_wait_for.html.erb')
   end
   
 

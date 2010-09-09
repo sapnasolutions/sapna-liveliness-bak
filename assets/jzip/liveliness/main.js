@@ -57,3 +57,14 @@ function init_date_picker(class, hidden_input_field) {
   			});
   });
 }
+
+function show_date_interval(url, list, indicator, wrapper) {
+  $.ajax({
+    url: url,
+    type: 'POST',
+    beforeSend: function() { list.hide(); indicator.show(); },
+    complete: function() { list.show(); indicator.hide(); },
+    error: function(e) { wrapper.html(e.responseText); },
+    success: function(s) { $('body').find('.wrapper').slideUp(); $('body').find('#date_interval').html(s); }
+  });
+}

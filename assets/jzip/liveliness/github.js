@@ -32,23 +32,23 @@ $('.application.login .github_wrapper .collaborators_wrapper .collaborator a.col
   var indicator = a.closest('.collaborators_wrapper').find('.big_indicator');
   var wrapper = a.closest('.github_wrapper');  
   
-  base_ajax_post(url, list, indicator, wrapper);
+  show_date_interval(url, list, indicator, wrapper);
 
   event.preventDefault();
 });
 
-// ========== DATES ==========
-$('.application.login .github_wrapper .dates_wrapper .dates form').live('submit', function(event){
-  var form = $(this);
-  var url = form.attr('action');
-  var list = form.closest('.dates');
-  var indicator = form.closest('.dates_wrapper').find('.big_indicator');
-  var wrapper = form.closest('.github_wrapper');  
-  
-  base_ajax_post(url, list, indicator, wrapper);
-
-  event.preventDefault();
-});
+// // ========== DATES ==========
+// $('.application.login .github_wrapper .dates_wrapper .dates form').live('submit', function(event){
+//   var form = $(this);
+//   var url = form.attr('action');
+//   var list = form.closest('.dates');
+//   var indicator = form.closest('.dates_wrapper').find('.big_indicator');
+//   var wrapper = form.closest('.github_wrapper');  
+//   
+//   base_ajax_post(url, list, indicator, wrapper);
+// 
+//   event.preventDefault();
+// });
 
 // ========== GO BACK: REPOSITORIES ==========
 function go_back_on_repositories(elt, prefix) {

@@ -15,13 +15,9 @@ class PivotalTracker::MembersController < PivotalTracker::BaseController
     session[:pivotal_tracker_member_id] = @member.id
     
     if has_all_pivotal_tracker_info? && has_all_github_info?
-      render :partial => "/shared/dates", :locals => { 
-        :path => pivotal_tracker_report_path(@project, @member), 
-        :project => @project, 
-        :member => @member 
-      }
+      render :partial => "/shared/dates"
     else
-      render :partial => "/pivotal_tracker/wait_for", :locals => { :project => @project, :member => @member }
+      render :partial => "/pivotal_tracker/wait_for", :locals => { :project => @project, :member => @member }, :status => 400
     end
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")

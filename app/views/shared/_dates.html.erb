@@ -1,14 +1,14 @@
 <div class="dates_wrapper">  
   <div class="dates">
-
-    <div class="navigation">
-      <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %><br />
-      <%= link_to "members", pivotal_tracker_project_members_path(project), :class => "members_list_link" %> &raquo; <%= member.name %>
+    
+    <div class="summary">
+      Pivotal Tracker: <%= session[:pivotal_tracker_project_id] %> / <%= session[:pivotal_tracker_member_id] %><br />
+      Github: <%= session[:github_repository_name] %> / <%= session[:github_collaborator_name] %>
     </div>
 
     <h2>Generate a report between:</h2>
     
-    <% semantic_form_for :date_interval, :url => path do |form| %>    
+    <% semantic_form_for :date_interval, :url => generate_report_path do |form| %>    
       <% form.inputs do %>
         <%= form.input :start_date, :as => :hidden, :value => Time.now.strftime("%Y/%m/%d") %>
         <%= form.input :end_date, :as => :hidden, :value => Time.now.strftime("%Y/%m/%d") %>
@@ -22,6 +22,7 @@
         </div>
         <div class="clear"></div>
       <% end %>
+      <br />
       <% form.buttons do %>
         <%= submit_tag "Generate!", :class => "submit" %>
       <% end %>
@@ -29,8 +30,6 @@
     
   </div>
   <%= indicator :size => :big, :class => "big_indicator", :message => "generating report ..." %>
-  <%= indicator :size => :big, :class => "big_indicator_projects", :message => "loading projects ..." %>
-  <%= indicator :size => :big, :class => "big_indicator_members", :message => "loading members ..." %>
 </div>
 
 <script type="text/javascript" charset="utf-8">

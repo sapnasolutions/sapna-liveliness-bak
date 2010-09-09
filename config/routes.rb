@@ -2,22 +2,21 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => "application", :action => "login"
   map.root :login
   
-  
   map.namespace :pivotal_tracker do |pivotal_tracker|
     pivotal_tracker.resource :users, :only => [:login], :collection => { :login => :post }
     pivotal_tracker.resource :projects, :only => [:list], :collection => { :list => :get }
     pivotal_tracker.project_members 'projects/:project_id/members',                   :controller => "projects",  :action => "members" 
     pivotal_tracker.member_dates    'projects/:project_id/members/:member_id/dates',  :controller => "members",   :action => "dates" 
-    pivotal_tracker.report          'projects/:project_id/members/:member_id/report', :controller => "reports",   :action => "generate" 
   end
 
   map.namespace :github do |github|
     github.resource :users, :only => [:login], :collection => { :login => :post }
     github.resource :repositories, :only => [:list], :collection => { :list => :get }
     github.repository_collaborators 'repository/:repository_name/collaborators', :controller => "repositories",  :action => "collaborators" 
-    github.collaborator_dates       'repository/:repository_name/collaborators/:collaborator_name/dates',  :controller => "collaborators",   :action => "dates" 
-    github.report                   'repository/:repository_name/collaborators/:collaborator_name/report', :controller => "reports",   :action => "generate" 
+    github.collaborator_dates       'repository/:repository_name/collaborators/:collaborator_name/dates',  :controller => "collaborators",   :action => "dates"     
   end
+  
+  map.generate_report '/reports/generate', :controller => "reports", :action => "generate"
   
   # The priority is based upon order of creation: first created -> highest priority.
 
