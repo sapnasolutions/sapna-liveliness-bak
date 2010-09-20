@@ -16,7 +16,7 @@ module Github
     def self.all(login, password)
       return [] unless login and password
       
-      client = Octopussy::Client.new(:login => login, :password => password)
+      client = Octopussy::Client.new(:login => login, :token => password)
       return [] unless client
       
       return client.list_repos.map { |hash|
