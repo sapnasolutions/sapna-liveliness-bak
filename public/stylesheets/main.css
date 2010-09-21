@@ -38,8 +38,8 @@ a {
   width: 900px;
   margin: auto;
   padding-bottom: 50px;
-  border-top: 1px solid #ddd;
-  padding-top: 50px; }
+  border-top: 1px solid #ddd; 
+}
 #page #footer {
   border-top: 1px solid #ddd;
   padding-top: 20px;
@@ -88,3 +88,25 @@ a {
 #page #content .wrapper .navigation, #page #content .wrapper .summary {
   padding-top: 10px;
   padding-bottom: 10px; }
+
+.pivotal_menu{
+  float: right;
+  padding: 5px;
+}
+.pivotal_menu li{
+  float: left;
+  margin: 5px;
+  list-style: none;
+}
+
+.box {
+  width: 400px;
+  min-height: 600px;
+}
+.box.left {
+  border-right: 1px solid #ddd; 
+}
+
+#pivotal-content, #github-content{
+  padding: 20px;
+}
