@@ -6,6 +6,7 @@ class PivotalTracker::UsersController < PivotalTracker::BaseController
     raise NoLoginFoundException.new unless params[:pivotal_tracker]
     raise NoTokenFoundException.new unless (token = get_token(params[:pivotal_tracker]))
     session[:pivotal_tracker_token] = token
+    session[:pivotal_tracker_username] = params[:pivotal_tracker][:login] if token
     render :partial => "pivotal_tracker/projects", :locals => { :projects => load_projects(token) }, :layout => false
   rescue NoLoginFoundException
     render_json_error("please login again", "no login information found")
@@ -16,7 +17,8 @@ class PivotalTracker::UsersController < PivotalTracker::BaseController
   private
   
   def get_token(params)
-    PivotalTracker::Token.get_token(params[:login], params[:password])
+    x=PivotalTracker::Token.get_token(params[:login], params[:password])
+    x
   end
   
 end

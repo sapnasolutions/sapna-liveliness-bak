@@ -1,11 +1,12 @@
 <div class="wrapper">
-  
-  <div class="box left">
-    <h1>Pivotal Tracker</h1>
-    <div class="box_wrapper pivotal_tracker_wrapper">
-      <%= render :partial => "/shared/login", :locals => { :symbol => :pivotal_tracker, :path => login_pivotal_tracker_users_path } %>
+  <% unless session[:pivotal_tracker_token].present? %>
+    <div class="box left">
+      <h1>Pivotal Tracker</h1>
+      <div class="box_wrapper pivotal_tracker_wrapper">
+        <%= render :partial => "/shared/login", :locals => { :symbol => :pivotal_tracker, :path => login_pivotal_tracker_users_path } %>
+      </div>
     </div>
-  </div>
+  <% end %>
 
   <div class="box right">
     <h1>Github</h1>

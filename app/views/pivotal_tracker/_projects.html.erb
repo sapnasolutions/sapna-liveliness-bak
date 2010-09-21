@@ -1,7 +1,2 @@
-<% projects_wrapper do %>
-  <% projects.each do |project| %>
-    <li class="project">
-      <%= link_to project.name, pivotal_tracker_project_members_path(project), :class => "project_link" %>
-    </li>
-  <% end %>
-<% end %>
+<h2>Projects</h2>
+<ul><%= render :partial => "pivotal_tracker/project", :collection => @projects %></ul>

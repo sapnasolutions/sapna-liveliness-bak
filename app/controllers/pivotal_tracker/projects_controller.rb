@@ -7,8 +7,11 @@ class PivotalTracker::ProjectsController < PivotalTracker::BaseController
     
     session[:pivotal_tracker_project_id] = nil
     session[:pivotal_tracker_member_id] = nil
-    
-    render :partial => "pivotal_tracker/projects", :locals => { :projects => load_projects(token) }, :layout => false
+    @projects = load_projects(token)
+    render :update do |page|
+      page.replace_html("pivotal-content", render(:partial => "pivotal_tracker/projects"))
+    end
+    #render :partial => "pivotal_tracker/projects", :locals => { :projects => load_projects(token) }, :layout => false
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")
   end
@@ -21,8 +24,11 @@ class PivotalTracker::ProjectsController < PivotalTracker::BaseController
     
     session[:pivotal_tracker_project_id] = @project.id
     session[:pivotal_tracker_member_id] = nil
-    
-    render :partial => '/pivotal_tracker/members', :locals => { :project => @project, :members => @project.memberships }
+    @members = @project.memberships
+    render :update do |page|
+      page.replace_html("pivotal-content", render(:partial => "/pivotal_tracker/members"))
+    end
+    #render :partial => '/pivotal_tracker/members', :locals => { :project => @project, :members => @project.memberships }
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")
   rescue NoProjectsFoundException

@@ -21,12 +21,20 @@ class ApplicationController < ActionController::Base
   class NoCollaboratorFoundException  < Exception; end
   
   def login
-    session[:pivotal_tracker_token]       = nil
-    session[:pivotal_tracker_project_id]  = nil
-    session[:pivotal_tracker_member_id]   = nil
-    session[:github_credentials]          = nil
-    session[:github_repository_name]      = nil
-    session[:github_collaborator_name]    = nil
+    # session[:pivotal_tracker_token]       = nil
+    # session[:pivotal_tracker_project_id]  = nil
+    # session[:pivotal_tracker_member_id]   = nil
+    # session[:github_credentials]          = nil
+    # session[:github_repository_name]      = nil
+    # session[:github_collaborator_name]    = nil
+    respond_to do |format|
+      format.js do 
+        render :update do |page|
+          page.replace_html("")
+        end
+      end
+      format.html
+    end
   end
   
   private

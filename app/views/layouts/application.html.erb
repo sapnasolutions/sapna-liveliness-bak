@@ -20,9 +20,16 @@
     </div>
     
     <div id="content">
-      <%= yield %>
-      
-      <div id="date_interval"></div>
+      <%#= yield %>
+      <div class="box left" id="pivotal-main">
+        <%= render :partial => "shared/pivotal_menu" %>        
+        <div id="pivotal-content"></div>
+      </div>
+      <div class="box right" id="github-main">
+        <%= render :partial => "shared/github_menu" %>
+        <div id="github-content"></div>
+      </div>
+      <div class="clear">
     </div>
     
     <div id="footer">

@@ -3,8 +3,8 @@ class ReportsController < ApplicationController
   
   def generate
     report = Report.new(params, session)
-    report.generate
-
+    @pivotal_activities = report.generate
+    logger.debug "=========> #{@pivotal_activities.length}"
   rescue Report::NoDateIntervalFoundException
     render_json_error(render_to_string(:partial => "/shared/dates"), "no date interval found")
   rescue Report::StartBeforeEndDateException

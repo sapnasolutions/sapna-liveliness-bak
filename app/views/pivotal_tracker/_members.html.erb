@@ -1,14 +1,4 @@
-<% members_wrapper do %>
-  <div class="navigation">
-    <%= link_to "projects", list_pivotal_tracker_projects_path, :class => "projects_list_link" %> &raquo; <%= project.name %>      
-  </div>
-
-  <h2>Project '<%=h project.name %>': the members</h2>
-  <ul>
-  <% members.each do |member| %>
-    <li class="member">
-      <%= link_to member.name, pivotal_tracker_member_dates_path(project, member), :class => "member_link" %>
-    </li>
-  <% end %>
-  </ul>
-<% end %>
+<h2>Project '<%=h @project.name %>': members</h2>
+<ul>
+  <%= render :partial => "pivotal_tracker/member", :collection => @members %>
+</ul>

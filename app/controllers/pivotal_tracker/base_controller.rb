@@ -1,7 +1,7 @@
 require 'pivotal_tracker/project'
 
 class PivotalTracker::BaseController < ApplicationController
-
+  helper_method :load_projects
   private
   
   def load_projects(token)

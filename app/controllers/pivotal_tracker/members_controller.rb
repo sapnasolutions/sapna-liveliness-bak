@@ -13,12 +13,14 @@ class PivotalTracker::MembersController < PivotalTracker::BaseController
     
     session[:pivotal_tracker_project_id] = @project.id
     session[:pivotal_tracker_member_id] = @member.id
-    
-    if has_all_pivotal_tracker_info? && has_all_github_info?
-      render :partial => "/shared/dates"
-    else
-      render :partial => "/pivotal_tracker/wait_for", :locals => { :project => @project, :member => @member }, :status => 400
+    render :update do |page|
+      page.replace_html("pivotal-content", render(:partial => "/shared/dates"))
     end
+    #if has_all_pivotal_tracker_info? && has_all_github_info?
+    #  render :partial => "/shared/dates"
+    #else
+    #  render :partial => "/pivotal_tracker/wait_for", :locals => { :project => @project, :member => @member }, :status => 400
+    #end
   rescue NoTokenFoundException
     render_json_error("please login again", "no token found")
   rescue NoProjectsFoundException
